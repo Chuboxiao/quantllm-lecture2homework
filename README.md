@@ -1,6 +1,6 @@
 # 第二讲作业：CTP 模拟交易与股票因子研究
 
-两项作业各有一份正式报告：[第一部分：最小 CTP Demo 与 SimNow 仿真交易](reports/第一部分作业报告.md)、[第二部分：股票均线与价格行为因子挖掘](reports/第二部分作业报告.md)。截至 2026-09-24 均已在本地整理，**尚未提交到 GitHub**。源码学习入口见[架构笔记](wiki/concepts/architecture.md)。
+两项作业各有一份正式报告：[第一部分：最小 CTP Demo 与 SimNow 仿真交易](reports/第一部分作业报告.md)、[第二部分：股票均线与价格行为因子挖掘](reports/第二部分作业报告.md)。源码学习入口见[架构笔记](wiki/concepts/architecture.md)。
 
 | 目录 | 用途 |
 |---|---|
