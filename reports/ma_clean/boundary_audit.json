@@ -1,0 +1,990 @@
+{
+  "scope": "development period-boundary correction only; 2026 holdout not reevaluated",
+  "locked_code_sha256": "900c7879c03611f11b274013ffad7b0571bf0e9a81b4765a33ffe7173b817d2f",
+  "crossing_rows_by_round": {
+    "1": {
+      "train": {
+        "dates": 1,
+        "rows": 289
+      },
+      "valid": {
+        "dates": 1,
+        "rows": 300
+      },
+      "old_dev": {
+        "dates": 0,
+        "rows": 0
+      }
+    },
+    "2": {
+      "train": {
+        "dates": 1,
+        "rows": 289
+      },
+      "valid": {
+        "dates": 1,
+        "rows": 300
+      },
+      "old_dev": {
+        "dates": 0,
+        "rows": 0
+      }
+    },
+    "3": {
+      "train": {
+        "dates": 1,
+        "rows": 289
+      },
+      "valid": {
+        "dates": 1,
+        "rows": 300
+      },
+      "old_dev": {
+        "dates": 0,
+        "rows": 0
+      }
+    },
+    "4": {
+      "train": {
+        "dates": 1,
+        "rows": 289
+      },
+      "valid": {
+        "dates": 1,
+        "rows": 300
+      },
+      "old_dev": {
+        "dates": 0,
+        "rows": 0
+      }
+    }
+  },
+  "changed_metrics_count": 75,
+  "changed_metrics": [
+    {
+      "round": 1,
+      "name": "gate_trend_control",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.0021029645773655388,
+      "new_signal_mean": 0.0020661918655192108,
+      "old_edge": 0.00032646728884749984,
+      "new_edge": 0.0002888774647055212
+    },
+    {
+      "round": 1,
+      "name": "gate_trend_control",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.00554090226082009,
+      "new_signal_mean": 0.004785056975460994,
+      "old_edge": 0.0014946878882690694,
+      "new_edge": 0.0010809932907850175
+    },
+    {
+      "round": 1,
+      "name": "gate_pullback_depth",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.003531000917379527,
+      "new_signal_mean": 0.00349858197486251,
+      "old_edge": 0.0017545036288614878,
+      "new_edge": 0.0017212675740488196
+    },
+    {
+      "round": 1,
+      "name": "gate_pullback_depth",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.006253295014472967,
+      "new_signal_mean": 0.005501902183824204,
+      "old_edge": 0.002207080641921948,
+      "new_edge": 0.001797838499148227
+    },
+    {
+      "round": 1,
+      "name": "gate_interaction",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.002745118978254552,
+      "new_signal_mean": 0.002710304054215812,
+      "old_edge": 0.0009686216897365124,
+      "new_edge": 0.0009329896534021213
+    },
+    {
+      "round": 1,
+      "name": "gate_interaction",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.006124176694029424,
+      "new_signal_mean": 0.005371976873877887,
+      "old_edge": 0.0020779623214784043,
+      "new_edge": 0.0016679131892019107
+    },
+    {
+      "round": 1,
+      "name": "gate_trend_plus_depth",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.0019934087572376414,
+      "new_signal_mean": 0.0019563020337445827,
+      "old_edge": 0.00021691146871960338,
+      "new_edge": 0.00017898763293089235
+    },
+    {
+      "round": 1,
+      "name": "gate_trend_plus_depth",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.005972681269148049,
+      "new_signal_mean": 0.005219534602591003,
+      "old_edge": 0.0019264668965970273,
+      "new_edge": 0.0015154709179150253
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_0p5_3",
+      "period": "train",
+      "old_days": 313,
+      "new_days": 312,
+      "old_signal_mean": 0.004091569227153763,
+      "new_signal_mean": 0.004008991695610041,
+      "old_edge": 0.002247483031100924,
+      "new_edge": 0.002163829852953009
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_0p5_3",
+      "period": "valid",
+      "old_days": 155,
+      "new_days": 154,
+      "old_signal_mean": 0.005438902062502876,
+      "new_signal_mean": 0.004687258612750946,
+      "old_edge": 0.002060789339119589,
+      "new_edge": 0.0016689654459207419
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_1_5",
+      "period": "train",
+      "old_days": 308,
+      "new_days": 307,
+      "old_signal_mean": 0.004866797684602273,
+      "new_signal_mean": 0.0047854004162498544,
+      "old_edge": 0.0025752224544304545,
+      "new_edge": 0.0024912744017958613
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_1_5",
+      "period": "valid",
+      "old_days": 148,
+      "new_days": 147,
+      "old_signal_mean": 0.003967987579084051,
+      "new_signal_mean": 0.003300154142376377,
+      "old_edge": 0.0004723271260003028,
+      "new_edge": 0.00018064786602374578
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_under_2",
+      "period": "train",
+      "old_days": 323,
+      "new_days": 322,
+      "old_signal_mean": 0.0012362158806767036,
+      "new_signal_mean": 0.0011960661968807888,
+      "old_edge": -0.00037478332968117456,
+      "new_edge": -0.0004152513822808578
+    },
+    {
+      "round": 1,
+      "name": "gate_depth_under_2",
+      "period": "valid",
+      "old_days": 160,
+      "new_days": 159,
+      "old_signal_mean": 0.0056475888642690195,
+      "new_signal_mean": 0.00491400741795387,
+      "old_edge": 0.001693753164101159,
+      "new_edge": 0.001305055294719281
+    },
+    {
+      "round": 1,
+      "name": "gate_positive_long_slope",
+      "period": "train",
+      "old_days": 325,
+      "new_days": 324,
+      "old_signal_mean": 0.0025905214027504017,
+      "new_signal_mean": 0.002554799511823826,
+      "old_edge": 0.0007119202507273246,
+      "new_edge": 0.0006750560243177893
+    },
+    {
+      "round": 1,
+      "name": "gate_positive_long_slope",
+      "period": "valid",
+      "old_days": 160,
+      "new_days": 159,
+      "old_signal_mean": 0.0054332645456569946,
+      "new_signal_mean": 0.00466646424912492,
+      "old_edge": 0.0012550089539868068,
+      "new_edge": 0.0008316807885294984
+    },
+    {
+      "round": 1,
+      "name": "gate_rebound_day",
+      "period": "valid",
+      "old_days": 136,
+      "new_days": 135,
+      "old_signal_mean": -0.00011793728614487306,
+      "new_signal_mean": -0.0013332056424089742,
+      "old_edge": -0.0042648572749118836,
+      "new_edge": -0.005075359672333088
+    },
+    {
+      "round": 1,
+      "name": "gate_down_day",
+      "period": "train",
+      "old_days": 312,
+      "new_days": 311,
+      "old_signal_mean": 0.002549547620253557,
+      "new_signal_mean": 0.002518405134938192,
+      "old_edge": 0.0002816809102795133,
+      "new_edge": 0.0002480966813807723
+    },
+    {
+      "round": 1,
+      "name": "gate_down_day",
+      "period": "valid",
+      "old_days": 156,
+      "new_days": 155,
+      "old_signal_mean": 0.005345159084977769,
+      "new_signal_mean": 0.004943520052692502,
+      "old_edge": 0.0016993008935119768,
+      "new_edge": 0.0016534326111692394
+    },
+    {
+      "round": 1,
+      "name": "gate_below_ma10",
+      "period": "train",
+      "old_days": 305,
+      "new_days": 304,
+      "old_signal_mean": 0.003482021720472933,
+      "new_signal_mean": 0.0033952660055113493,
+      "old_edge": 0.0029743478200209704,
+      "new_edge": 0.002890884245043241
+    },
+    {
+      "round": 1,
+      "name": "gate_below_ma10",
+      "period": "valid",
+      "old_days": 157,
+      "new_days": 156,
+      "old_signal_mean": 0.0047112306080113915,
+      "new_signal_mean": 0.004133738362755387,
+      "old_edge": 0.00131525640257007,
+      "new_edge": 0.001092856145949427
+    },
+    {
+      "round": 1,
+      "name": "gate_positive_short_slope",
+      "period": "train",
+      "old_days": 319,
+      "new_days": 318,
+      "old_signal_mean": 0.002300772129170257,
+      "new_signal_mean": 0.0022634650790639968,
+      "old_edge": 0.0007078320018648785,
+      "new_edge": 0.0006702593678851557
+    },
+    {
+      "round": 1,
+      "name": "gate_positive_short_slope",
+      "period": "valid",
+      "old_days": 158,
+      "new_days": 157,
+      "old_signal_mean": 0.0034024235204930357,
+      "new_signal_mean": 0.0025796970831009204,
+      "old_edge": -0.0003224781373017972,
+      "new_edge": -0.000794469397784593
+    },
+    {
+      "round": 2,
+      "name": "breadth_below_45",
+      "period": "train",
+      "old_days": 145,
+      "new_days": 144,
+      "old_signal_mean": 0.00044535458336182246,
+      "new_signal_mean": 0.0003500833369757171,
+      "old_edge": 0.0014979010637747405,
+      "new_edge": 0.0014204147544438926
+    },
+    {
+      "round": 2,
+      "name": "breadth_below_45",
+      "period": "valid",
+      "old_days": 74,
+      "new_days": 73,
+      "old_signal_mean": 0.004409297962483164,
+      "new_signal_mean": 0.0027371493329517637,
+      "old_edge": 0.0012005128649906639,
+      "new_edge": 0.00028975518525468203
+    },
+    {
+      "round": 2,
+      "name": "breadth_below_55",
+      "period": "train",
+      "old_days": 174,
+      "new_days": 173,
+      "old_signal_mean": -0.0001019476242104232,
+      "new_signal_mean": -0.00018441214263337962,
+      "old_edge": 0.0006534008649890635,
+      "new_edge": 0.0005840220861311
+    },
+    {
+      "round": 2,
+      "name": "breadth_below_55",
+      "period": "valid",
+      "old_days": 100,
+      "new_days": 99,
+      "old_signal_mean": 0.005038572911884346,
+      "new_signal_mean": 0.003811930740102617,
+      "old_edge": 0.0007755920495871312,
+      "new_edge": 9.973112598985562e-05
+    },
+    {
+      "round": 2,
+      "name": "market_up_day",
+      "period": "valid",
+      "old_days": 79,
+      "new_days": 78,
+      "old_signal_mean": 0.007594300751201907,
+      "new_signal_mean": 0.0060701745054701954,
+      "old_edge": 0.0031903586910623496,
+      "new_edge": 0.0023634937577975425
+    },
+    {
+      "round": 2,
+      "name": "market_down_day",
+      "period": "train",
+      "old_days": 172,
+      "new_days": 171,
+      "old_signal_mean": 0.006459433827510892,
+      "new_signal_mean": 0.006414375463560891,
+      "old_edge": 0.0032477298450670393,
+      "new_edge": 0.003192711133006514
+    },
+    {
+      "round": 2,
+      "name": "relative_strength_day",
+      "period": "train",
+      "old_days": 263,
+      "new_days": 262,
+      "old_signal_mean": 0.0041932118794630185,
+      "new_signal_mean": 0.004095263226068624,
+      "old_edge": 0.0016739499952338434,
+      "new_edge": 0.0015721434127223294
+    },
+    {
+      "round": 2,
+      "name": "relative_strength_day",
+      "period": "valid",
+      "old_days": 133,
+      "new_days": 132,
+      "old_signal_mean": 0.0026967330712638423,
+      "new_signal_mean": 0.0014966748732589518,
+      "old_edge": -0.0018152087470320107,
+      "new_edge": -0.0026040670767470374
+    },
+    {
+      "round": 2,
+      "name": "relative_weakness_day",
+      "period": "train",
+      "old_days": 317,
+      "new_days": 316,
+      "old_signal_mean": 0.0027369508951167595,
+      "new_signal_mean": 0.0027504441920724234,
+      "old_edge": 0.0002689679017463383,
+      "new_edge": 0.0002794248109240704
+    },
+    {
+      "round": 2,
+      "name": "relative_weakness_day",
+      "period": "valid",
+      "old_days": 159,
+      "new_days": 158,
+      "old_signal_mean": 0.0053177746265045895,
+      "new_signal_mean": 0.004690418910059226,
+      "old_edge": 0.001641851408091005,
+      "new_edge": 0.001363321015785797
+    },
+    {
+      "round": 2,
+      "name": "weak_breadth_rebound",
+      "period": "valid",
+      "old_days": 64,
+      "new_days": 63,
+      "old_signal_mean": -0.0010075365287768665,
+      "new_signal_mean": -0.0036258036293845743,
+      "old_edge": -0.004826583702966294,
+      "new_edge": -0.006572290847091965
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_long_up",
+      "period": "train",
+      "old_days": 357,
+      "new_days": 356,
+      "old_signal_mean": 0.0010147953619978568,
+      "new_signal_mean": 0.0009753973117363012,
+      "old_edge": -0.0015162552201059,
+      "new_edge": -0.001558525647127455
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_long_up",
+      "period": "valid",
+      "old_days": 163,
+      "new_days": 162,
+      "old_signal_mean": 0.004943492463847898,
+      "new_signal_mean": 0.004539210829443038,
+      "old_edge": 0.0008142156201923313,
+      "new_edge": 0.0007473478597930394
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_depth",
+      "period": "train",
+      "old_days": 357,
+      "new_days": 356,
+      "old_signal_mean": 0.00020276113232251672,
+      "new_signal_mean": 0.00016585425041899197,
+      "old_edge": -0.002328289449781241,
+      "new_edge": -0.0023680687084447634
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_depth",
+      "period": "valid",
+      "old_days": 163,
+      "new_days": 162,
+      "old_signal_mean": 0.0039506722649854595,
+      "new_signal_mean": 0.003762549962621829,
+      "old_edge": -0.00017860457867010883,
+      "new_edge": -2.9313007028168248e-05
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_shallow",
+      "period": "train",
+      "old_days": 334,
+      "new_days": 333,
+      "old_signal_mean": -0.00021950060880016886,
+      "new_signal_mean": -0.00023402854405318762,
+      "old_edge": -0.002316301363112638,
+      "new_edge": -0.0023325960139775745
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_shallow",
+      "period": "valid",
+      "old_days": 162,
+      "new_days": 161,
+      "old_signal_mean": 0.003947386273786494,
+      "new_signal_mean": 0.0036149238676703535,
+      "old_edge": -0.00023269754788989532,
+      "new_edge": -0.00022596591294465895
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_deep",
+      "period": "train",
+      "old_days": 344,
+      "new_days": 343,
+      "old_signal_mean": 0.0004775002251333198,
+      "new_signal_mean": 0.00044803172830999656,
+      "old_edge": -0.0019362547992472408,
+      "new_edge": -0.0019683625688660055
+    },
+    {
+      "round": 3,
+      "name": "under_ma20_deep",
+      "period": "valid",
+      "old_days": 160,
+      "new_days": 159,
+      "old_signal_mean": 0.003021152040391768,
+      "new_signal_mean": 0.0027501398268304513,
+      "old_edge": -0.0006973865109833054,
+      "new_edge": -0.0006220352913296347
+    },
+    {
+      "round": 3,
+      "name": "ma5_below20_long_up",
+      "period": "train",
+      "old_days": 355,
+      "new_days": 354,
+      "old_signal_mean": -0.0005133250623442014,
+      "new_signal_mean": -0.0005460544138649968,
+      "old_edge": -0.0023777002341813774,
+      "new_edge": -0.0024114349267086487
+    },
+    {
+      "round": 3,
+      "name": "ma5_below20_long_up",
+      "period": "valid",
+      "old_days": 163,
+      "new_days": 162,
+      "old_signal_mean": 0.0057567350007759945,
+      "new_signal_mean": 0.005378354919253324,
+      "old_edge": 0.0016274581571204263,
+      "new_edge": 0.001586491949603327
+    },
+    {
+      "round": 3,
+      "name": "ma5_cross_down_long_up",
+      "period": "train",
+      "old_days": 273,
+      "new_days": 272,
+      "old_signal_mean": 0.0036727751516489326,
+      "new_signal_mean": 0.0035946463020141155,
+      "old_edge": 0.0028923368591359014,
+      "new_edge": 0.0028168846498063463
+    },
+    {
+      "round": 3,
+      "name": "ma5_cross_down_long_up",
+      "period": "valid",
+      "old_days": 138,
+      "new_days": 137,
+      "old_signal_mean": 0.007066379751487054,
+      "new_signal_mean": 0.007051083354385562,
+      "old_edge": 0.003932333959230764,
+      "new_edge": 0.004323287771182568
+    },
+    {
+      "round": 3,
+      "name": "ma5_cross_up_long_up",
+      "period": "train",
+      "old_days": 243,
+      "new_days": 242,
+      "old_signal_mean": 0.004776533570638266,
+      "new_signal_mean": 0.0049065849253191966,
+      "old_edge": 0.0016935374360332563,
+      "new_edge": 0.0018170825441064956
+    },
+    {
+      "round": 3,
+      "name": "ma5_cross_up_long_up",
+      "period": "valid",
+      "old_days": 122,
+      "new_days": 121,
+      "old_signal_mean": 0.007178161179884516,
+      "new_signal_mean": 0.00649434944517771,
+      "old_edge": 0.0010127417035662415,
+      "new_edge": 0.000763846538745718
+    },
+    {
+      "round": 3,
+      "name": "price_reclaim_ma20",
+      "period": "valid",
+      "old_days": 143,
+      "new_days": 142,
+      "old_signal_mean": 0.0009895488801361328,
+      "new_signal_mean": 0.0005190862997961319,
+      "old_edge": -0.0024762924783302723,
+      "new_edge": -0.002557146022937234
+    },
+    {
+      "round": 3,
+      "name": "price_reclaim_ma5",
+      "period": "train",
+      "old_days": 325,
+      "new_days": 324,
+      "old_signal_mean": -0.0038393159620758468,
+      "new_signal_mean": -0.003861379163969954,
+      "old_edge": -0.004748514508117002,
+      "new_edge": -0.004768728062142271
+    },
+    {
+      "round": 3,
+      "name": "price_reclaim_ma5",
+      "period": "valid",
+      "old_days": 160,
+      "new_days": 159,
+      "old_signal_mean": 0.006293868497246691,
+      "new_signal_mean": 0.0053342174434667326,
+      "old_edge": 0.0023921137667100014,
+      "new_edge": 0.0017776738431314366
+    },
+    {
+      "round": 3,
+      "name": "long_gap_cross_up",
+      "period": "valid",
+      "old_days": 153,
+      "new_days": 152,
+      "old_signal_mean": 0.0032274410534989762,
+      "new_signal_mean": 0.002955950482066698,
+      "old_edge": -0.0012322067152149058,
+      "new_edge": -0.0011462586243850517
+    },
+    {
+      "round": 3,
+      "name": "long_gap_cross_down_rebound",
+      "period": "train",
+      "old_days": 251,
+      "new_days": 250,
+      "old_signal_mean": -0.0033605449330793417,
+      "new_signal_mean": -0.003340944791262436,
+      "old_edge": -0.0032859371018258087,
+      "new_edge": -0.0032600045908617124
+    },
+    {
+      "round": 3,
+      "name": "long_gap_cross_down_rebound",
+      "period": "valid",
+      "old_days": 136,
+      "new_days": 135,
+      "old_signal_mean": 0.0005192741193539204,
+      "new_signal_mean": 0.00017658791475584474,
+      "old_edge": -0.0039044794750981936,
+      "new_edge": -0.003844450340154744
+    },
+    {
+      "round": 3,
+      "name": "double_bear_rebound",
+      "period": "train",
+      "old_days": 325,
+      "new_days": 324,
+      "old_signal_mean": -0.002134403789965535,
+      "new_signal_mean": -0.0021135671036712,
+      "old_edge": -0.002779992418364205,
+      "new_edge": -0.0027564924733441123
+    },
+    {
+      "round": 3,
+      "name": "double_bear_rebound",
+      "period": "valid",
+      "old_days": 156,
+      "new_days": 155,
+      "old_signal_mean": 0.001637591307556585,
+      "new_signal_mean": 0.0015163261975050743,
+      "old_edge": -0.0019599083973723982,
+      "new_edge": -0.0017250907672456586
+    },
+    {
+      "round": 4,
+      "name": "low_relative_vol",
+      "period": "train",
+      "old_days": 296,
+      "new_days": 295,
+      "old_signal_mean": 0.005021686556732296,
+      "new_signal_mean": 0.004937503260081237,
+      "old_edge": 0.003693841263062901,
+      "new_edge": 0.0036102703025537907
+    },
+    {
+      "round": 4,
+      "name": "low_relative_vol",
+      "period": "valid",
+      "old_days": 152,
+      "new_days": 151,
+      "old_signal_mean": 0.0025742407818712875,
+      "new_signal_mean": 0.001813300031002829,
+      "old_edge": -0.0006832658266984743,
+      "new_edge": -0.0010764395721100562
+    },
+    {
+      "round": 4,
+      "name": "high_relative_vol",
+      "period": "train",
+      "old_days": 316,
+      "new_days": 315,
+      "old_signal_mean": 0.0017344719435526952,
+      "new_signal_mean": 0.0017448256035096032,
+      "old_edge": -0.00019706609287400907,
+      "new_edge": -0.00018805546015799975
+    },
+    {
+      "round": 4,
+      "name": "high_relative_vol",
+      "period": "valid",
+      "old_days": 158,
+      "new_days": 157,
+      "old_signal_mean": 0.007589337058563337,
+      "new_signal_mean": 0.006820631443208143,
+      "old_edge": 0.0035255360562204937,
+      "new_edge": 0.003105407023223358
+    },
+    {
+      "round": 4,
+      "name": "vol_below_2p5pct",
+      "period": "train",
+      "old_days": 278,
+      "new_days": 277,
+      "old_signal_mean": 0.005381650297141033,
+      "new_signal_mean": 0.005349943568744571,
+      "old_edge": 0.003073898996066024,
+      "new_edge": 0.003039306827794001
+    },
+    {
+      "round": 4,
+      "name": "vol_below_2p5pct",
+      "period": "valid",
+      "old_days": 152,
+      "new_days": 151,
+      "old_signal_mean": 0.004433312882679083,
+      "new_signal_mean": 0.003703484446939731,
+      "old_edge": 0.0010277033836211627,
+      "new_edge": 0.0006646611394943953
+    },
+    {
+      "round": 4,
+      "name": "vol_between_2p5_5pct",
+      "period": "valid",
+      "old_days": 151,
+      "new_days": 150,
+      "old_signal_mean": 0.006220792474359185,
+      "new_signal_mean": 0.005368865141901148,
+      "old_edge": 0.002558028155490538,
+      "new_edge": 0.002073617890457098
+    },
+    {
+      "round": 4,
+      "name": "volume_ratio_above_1p2",
+      "period": "valid",
+      "old_days": 137,
+      "new_days": 136,
+      "old_signal_mean": 0.005578006947849366,
+      "new_signal_mean": 0.0038775198255522917,
+      "old_edge": 0.001579595076570295,
+      "new_edge": 0.0002819896642826255
+    },
+    {
+      "round": 4,
+      "name": "volume_ratio_below_0p8",
+      "period": "train",
+      "old_days": 298,
+      "new_days": 297,
+      "old_signal_mean": 0.00508596615790327,
+      "new_signal_mean": 0.005002566181772324,
+      "old_edge": 0.0031456980506812384,
+      "new_edge": 0.003060844257541275
+    },
+    {
+      "round": 4,
+      "name": "volume_ratio_below_0p8",
+      "period": "valid",
+      "old_days": 145,
+      "new_days": 144,
+      "old_signal_mean": 0.0022253219837270145,
+      "new_signal_mean": 0.0021124113230991262,
+      "old_edge": -0.0005424867155088888,
+      "new_edge": -0.00026635212798870576
+    },
+    {
+      "round": 4,
+      "name": "vol_scaled_trend_depth",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.002386182225414733,
+      "new_signal_mean": 0.002350272982007581,
+      "old_edge": 0.000609684936896695,
+      "new_edge": 0.0005729585811938899
+    },
+    {
+      "round": 4,
+      "name": "vol_scaled_trend_depth",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.006202674978741234,
+      "new_signal_mean": 0.005450965772869144,
+      "old_edge": 0.0021564606061902133,
+      "new_edge": 0.001746902088193169
+    },
+    {
+      "round": 4,
+      "name": "vol_scaled_depth",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.003760063575273286,
+      "new_signal_mean": 0.0037283429945181423,
+      "old_edge": 0.001983566286755248,
+      "new_edge": 0.0019510285937044515
+    },
+    {
+      "round": 4,
+      "name": "vol_scaled_depth",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.0061675219681612235,
+      "new_signal_mean": 0.00541559305597301,
+      "old_edge": 0.0021213075956102024,
+      "new_edge": 0.0017115293712970324
+    },
+    {
+      "round": 4,
+      "name": "active_volume_weighted_depth",
+      "period": "train",
+      "old_days": 329,
+      "new_days": 328,
+      "old_signal_mean": 0.0019940740781004026,
+      "new_signal_mean": 0.001956969383024608,
+      "old_edge": 0.00021757678958236336,
+      "new_edge": 0.00017965498221091724
+    },
+    {
+      "round": 4,
+      "name": "active_volume_weighted_depth",
+      "period": "valid",
+      "old_days": 161,
+      "new_days": 160,
+      "old_signal_mean": 0.005839389969805842,
+      "new_signal_mean": 0.005085410232627907,
+      "old_edge": 0.001793175597254821,
+      "new_edge": 0.00138134654795193
+    },
+    {
+      "round": 4,
+      "name": "relative_weakness_plus_low_vol",
+      "period": "valid",
+      "old_days": 139,
+      "new_days": 138,
+      "old_signal_mean": 0.004801933962208425,
+      "new_signal_mean": 0.003985453091188135,
+      "old_edge": 0.0016954469427109778,
+      "new_edge": 0.0012824721399012726
+    },
+    {
+      "round": 4,
+      "name": "rising_short_plus_low_vol",
+      "period": "train",
+      "old_days": 285,
+      "new_days": 284,
+      "old_signal_mean": 0.005592470901344083,
+      "new_signal_mean": 0.005507036788078413,
+      "old_edge": 0.004589270068888945,
+      "new_edge": 0.004505615123310207
+    },
+    {
+      "round": 4,
+      "name": "rising_short_plus_low_vol",
+      "period": "valid",
+      "old_days": 146,
+      "new_days": 145,
+      "old_signal_mean": 0.004347396668032194,
+      "new_signal_mean": 0.0035671973749633913,
+      "old_edge": 0.0010779417901357591,
+      "new_edge": 0.0006806450457197956
+    }
+  ],
+  "corrected_qualifiers": [],
+  "corrected_fallback_pool_size": 1,
+  "corrected_selection_rule": "same four-positive-period diagnostic fallback",
+  "original_selected": "market_down_day",
+  "corrected_selected": "market_down_day",
+  "selection_unchanged": true,
+  "corrected_selected_development": {
+    "train": {
+      "days": 171,
+      "signals": 2562,
+      "stocks_per_day": 290.2865497076023,
+      "signal_mean": 0.006414375463560891,
+      "signal_median_across_days": 0.001720321295300753,
+      "signal_worst_case_mean": -0.00882294230171141,
+      "baseline_mean": 0.0032216643305543746,
+      "edge": 0.003192711133006514,
+      "edge_sd": 0.026319981783934767,
+      "edge_median_across_days": 0.0025368353651461614,
+      "signal_up_rate": 0.5120088045628484,
+      "baseline_up_rate": 0.49853844089054783,
+      "rank_ic": 0.029054988592400518,
+      "rank_ic_days": 171,
+      "entry_no_fills": 27,
+      "unclosed_at_horizon": 34,
+      "after_0p3pct_cost_sensitivity": 0.003414375463560891,
+      "edge_naive_95pct_interval": [
+        -0.0007522579187886776,
+        0.007137680184801706
+      ]
+    },
+    "valid": {
+      "days": 82,
+      "signals": 1390,
+      "stocks_per_day": 292.9756097560976,
+      "signal_mean": 0.004410389329120548,
+      "signal_median_across_days": 0.004713133757532684,
+      "signal_worst_case_mean": -0.0004263586817310044,
+      "baseline_mean": 0.0037015742832888945,
+      "edge": 0.0007088150458316558,
+      "edge_sd": 0.024987357190464424,
+      "edge_median_across_days": 0.002491748547575682,
+      "signal_up_rate": 0.5215348719718953,
+      "baseline_up_rate": 0.5098907419422385,
+      "rank_ic": 0.010082233396912528,
+      "rank_ic_days": 82,
+      "entry_no_fills": 2,
+      "unclosed_at_horizon": 8,
+      "after_0p3pct_cost_sensitivity": 0.0014103893291205483,
+      "edge_naive_95pct_interval": [
+        -0.004699593248924085,
+        0.006117223340587397
+      ]
+    },
+    "old_dev": {
+      "days": 71,
+      "signals": 1126,
+      "stocks_per_day": 299.80281690140845,
+      "signal_mean": 0.004597205930110409,
+      "signal_median_across_days": 0.0017417186913810667,
+      "signal_worst_case_mean": 0.004597205930110409,
+      "baseline_mean": 0.002135925524684798,
+      "edge": 0.00246128040542561,
+      "edge_sd": 0.023711507606901605,
+      "edge_median_across_days": 0.0011675466533020056,
+      "signal_up_rate": 0.4956224917492525,
+      "baseline_up_rate": 0.4850930331150783,
+      "rank_ic": 0.008478173006803097,
+      "rank_ic_days": 71,
+      "entry_no_fills": 0,
+      "unclosed_at_horizon": 0,
+      "after_0p3pct_cost_sensitivity": 0.0015972059301104088,
+      "edge_naive_95pct_interval": [
+        -0.003054234528509381,
+        0.0079767953393606
+      ]
+    },
+    "new_dev": {
+      "days": 33,
+      "signals": 535,
+      "stocks_per_day": 299.0,
+      "signal_mean": 0.00783099784288382,
+      "signal_median_across_days": 0.0006155447010049997,
+      "signal_worst_case_mean": 0.006279404200633377,
+      "baseline_mean": 0.005905529130351987,
+      "edge": 0.0019254687125318337,
+      "edge_sd": 0.022405898258331596,
+      "edge_median_across_days": -0.001450266138431952,
+      "signal_up_rate": 0.488231844694693,
+      "baseline_up_rate": 0.4776960162385976,
+      "rank_ic": 0.0017542767272899075,
+      "rank_ic_days": 33,
+      "entry_no_fills": 0,
+      "unclosed_at_horizon": 1,
+      "after_0p3pct_cost_sensitivity": 0.004830997842883819,
+      "edge_naive_95pct_interval": [
+        -0.005719249134316912,
+        0.00957018655938058
+      ]
+    }
+  }
+}

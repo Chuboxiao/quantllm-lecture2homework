@@ -1,0 +1,11 @@
+test_automatic_discovery (test_demo.Tests.test_automatic_discovery) ... ok
+test_continuous_and_clean_shutdown (test_demo.Tests.test_continuous_and_clean_shutdown) ... ok
+test_invalid_prices (test_demo.Tests.test_invalid_prices) ... ok
+test_login_failure_not_success (test_demo.Tests.test_login_failure_not_success) ... ok
+test_selection (test_demo.Tests.test_selection) ... ok
+test_subscribed_without_ticks_not_success (test_demo.Tests.test_subscribed_without_ticks_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.471s
+
+OK

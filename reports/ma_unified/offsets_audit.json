@@ -1,0 +1,177 @@
+{
+  "posthoc_diagnostic_only": true,
+  "universe": "2023-12-25 fixed CSI300 300-stock pool",
+  "factor": "old_market_down_pullback",
+  "period": "2026-01-01 to 2026-09-23, already viewed",
+  "offset": "number of market trading days skipped from 2026-01-05 before every-sixth-day sampling",
+  "cases": {
+    "0": {
+      "first_signal_day": "2026-01-05",
+      "sample_dates": 29,
+      "eligible_rows_all_calendar": 8620,
+      "result": {
+        "days": 14,
+        "signals": 230,
+        "stocks_per_day": 297.14285714285717,
+        "signal_mean": 0.011730643282934506,
+        "signal_median_across_days": -0.006179647341698236,
+        "signal_worst_case_mean": 0.011730643282934506,
+        "baseline_mean": -0.0024511092319175233,
+        "edge": 0.014181752514852026,
+        "edge_sd": 0.040044715742783156,
+        "edge_median_across_days": -0.0015102668151203676,
+        "signal_up_rate": 0.4458619811560988,
+        "baseline_up_rate": 0.41685692818243153,
+        "rank_ic": 0.011682172790525445,
+        "rank_ic_days": 14,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.008730643282934505,
+        "edge_naive_95pct_interval": [
+          -0.0067949523895826005,
+          0.03515845741928665
+        ]
+      }
+    },
+    "1": {
+      "first_signal_day": "2026-01-06",
+      "sample_dates": 29,
+      "eligible_rows_all_calendar": 8618,
+      "result": {
+        "days": 18,
+        "signals": 295,
+        "stocks_per_day": 297.22222222222223,
+        "signal_mean": -0.005193428280457417,
+        "signal_median_across_days": -0.008314057160309057,
+        "signal_worst_case_mean": -0.005193428280457417,
+        "baseline_mean": 0.0006409217097466609,
+        "edge": -0.0058343499902040775,
+        "edge_sd": 0.029642311740076074,
+        "edge_median_across_days": -0.01010872513110529,
+        "signal_up_rate": 0.4291951965971574,
+        "baseline_up_rate": 0.47065864165976024,
+        "rank_ic": -0.0475917625991258,
+        "rank_ic_days": 18,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": -0.008193428280457417,
+        "edge_naive_95pct_interval": [
+          -0.019528399355953633,
+          0.007859699375545478
+        ]
+      }
+    },
+    "2": {
+      "first_signal_day": "2026-01-07",
+      "sample_dates": 29,
+      "eligible_rows_all_calendar": 8617,
+      "result": {
+        "days": 14,
+        "signals": 244,
+        "stocks_per_day": 297.0,
+        "signal_mean": 0.007146837634974257,
+        "signal_median_across_days": 0.003927216035709891,
+        "signal_worst_case_mean": 0.007146837634974257,
+        "baseline_mean": -0.0014018685474527723,
+        "edge": 0.00854870618242703,
+        "edge_sd": 0.03560013107472126,
+        "edge_median_across_days": 0.005017904498534228,
+        "signal_up_rate": 0.4575160133983664,
+        "baseline_up_rate": 0.4395292598963329,
+        "rank_ic": 0.017333006977627945,
+        "rank_ic_days": 14,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.004146837634974257,
+        "edge_naive_95pct_interval": [
+          -0.010099782894392154,
+          0.027197195259246215
+        ]
+      }
+    },
+    "3": {
+      "first_signal_day": "2026-01-08",
+      "sample_dates": 28,
+      "eligible_rows_all_calendar": 8322,
+      "result": {
+        "days": 16,
+        "signals": 254,
+        "stocks_per_day": 297.125,
+        "signal_mean": 0.0016304882219189362,
+        "signal_median_across_days": -0.008290040776979146,
+        "signal_worst_case_mean": 0.0016304882219189362,
+        "baseline_mean": -0.00523040002740136,
+        "edge": 0.006860888249320294,
+        "edge_sd": 0.0245923516226546,
+        "edge_median_across_days": -5.891437092969123e-05,
+        "signal_up_rate": 0.4108540810432258,
+        "baseline_up_rate": 0.4152550392063815,
+        "rank_ic": 0.02800477565516328,
+        "rank_ic_days": 16,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": -0.001369511778081064,
+        "edge_naive_95pct_interval": [
+          -0.005189364045780459,
+          0.01891114054442105
+        ]
+      }
+    },
+    "4": {
+      "first_signal_day": "2026-01-09",
+      "sample_dates": 28,
+      "eligible_rows_all_calendar": 8321,
+      "result": {
+        "days": 15,
+        "signals": 235,
+        "stocks_per_day": 297.2,
+        "signal_mean": -0.014326351005916092,
+        "signal_median_across_days": -0.011251758087201136,
+        "signal_worst_case_mean": -0.014326351005916092,
+        "baseline_mean": -0.0005618488099909285,
+        "edge": -0.013764502195925161,
+        "edge_sd": 0.031059858290542298,
+        "edge_median_across_days": -0.013973884574457866,
+        "signal_up_rate": 0.3319951840385277,
+        "baseline_up_rate": 0.44680746436898566,
+        "rank_ic": -0.06468931041707451,
+        "rank_ic_days": 15,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": -0.01732635100591609,
+        "edge_naive_95pct_interval": [
+          -0.029482959211516634,
+          0.0019539548196663096
+        ]
+      }
+    },
+    "5": {
+      "first_signal_day": "2026-01-12",
+      "sample_dates": 28,
+      "eligible_rows_all_calendar": 8323,
+      "result": {
+        "days": 10,
+        "signals": 180,
+        "stocks_per_day": 297.4,
+        "signal_mean": 0.019220860025255828,
+        "signal_median_across_days": 0.008182311187790614,
+        "signal_worst_case_mean": 0.019220860025255828,
+        "baseline_mean": 0.0008473228044766551,
+        "edge": 0.018373537220779175,
+        "edge_sd": 0.022856518104527886,
+        "edge_median_across_days": 0.027660252379212602,
+        "signal_up_rate": 0.5129761904761905,
+        "baseline_up_rate": 0.4462499717533275,
+        "rank_ic": 0.0884401636459462,
+        "rank_ic_days": 10,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.01622086002525583,
+        "edge_naive_95pct_interval": [
+          0.004206920528907379,
+          0.03254015391265097
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "locked_before_csi500_bars": true,
+  "chosen_factor": "ribbon_joint_widening",
+  "reason": "the sole round-1 factor passing the predeclared three-era own-return historical screen",
+  "formula": "if MA5>MA20>MA60>MA120, score=max(0,min(g5_20[t]-g5_20[t-5],g20_60[t]-g20_60[t-5],g60_120[t]-g60_120[t-5])); otherwise score=0",
+  "cohort": "the 500 CSI500 members requested as of 2023-12-29, frozen before 2024 returns",
+  "signal": "every sixth market date anchored at 2008-01-02, t close, t>=2024-01-01, t+6<=2026-09-23",
+  "target": "t+1 open to t+6 open; no next-day entry=0 return; unclosed at horizon=last available close plus separate -100% stress",
+  "portfolio_rule": "up to 20 eligible positive-score stocks per date, equal-weight mean; no future filter",
+  "cost_sensitivity": 0.003,
+  "transfer_support_rule": "combined >=50 signal dates and >=500 selected positions; annual gross mean >0.3% in 2024 and 2025; combined mean minus 0.3% has a positive 95% four-signal-date moving-block lower bound; combined same-date universe edge >0",
+  "scope": "new stock universe but overlapping calendar years; transfer evidence only, not an independent future-time test or tradable strategy",
+  "round_01_result_sha256": "9903359cdf53616e044038f3296b9ecc9c604059e3bf5c4e3b0bdcfece68c134",
+  "membership_sha256": "eaae0666e9ca26e3ab5a5ab323d97aeb7dc9e9820a46dc41b16aa40e779ffc5f",
+  "csi500_bars_fetched": false
+}

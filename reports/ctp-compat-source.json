@@ -1,0 +1,376 @@
+{
+  "repository": "https://github.com/vnpy/vnpy_ctp",
+  "tag": "6.7.7.2",
+  "commit": "fa199f70dac9e242c20e925c17e2241b877e694f",
+  "files_verified": 46,
+  "git_tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5012256f33afe3c8d323ca170fc5e6e0aa47945f",
+      "size": 309,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/5012256f33afe3c8d323ca170fc5e6e0aa47945f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54f10e7bc06f0934033959b0231bdef088195c2e",
+      "size": 1689,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/54f10e7bc06f0934033959b0231bdef088195c2e"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dba3977a21e1b374eb479ff1aad368cd77bd994",
+      "size": 1088,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/9dba3977a21e1b374eb479ff1aad368cd77bd994"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6274be2d5ed70cd6bb5d798ee437ddc1f357d12a",
+      "size": 2314,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6274be2d5ed70cd6bb5d798ee437ddc1f357d12a"
+    },
+    {
+      "path": "meson.build",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d990e5a5768c227d4b4e5bcb2ed1ad4f11747ecc",
+      "size": 5716,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/d990e5a5768c227d4b4e5bcb2ed1ad4f11747ecc"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60c112ee084e1605a5164974cb5118daf90b0494",
+      "size": 2274,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/60c112ee084e1605a5164974cb5118daf90b0494"
+    },
+    {
+      "path": "vnpy_ctp/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4244c7d0d72f90bb86fab4255ca193daf76b50e5",
+      "size": 1335,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/4244c7d0d72f90bb86fab4255ca193daf76b50e5"
+    },
+    {
+      "path": "vnpy_ctp/api/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0ecaad17682403025d6c700521047358c0416e9",
+      "size": 117,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/c0ecaad17682403025d6c700521047358c0416e9"
+    },
+    {
+      "path": "vnpy_ctp/api/ctp_constant.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b18976ec2f1c67b7d40d9d9527efdb22420cc078",
+      "size": 41755,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/b18976ec2f1c67b7d40d9d9527efdb22420cc078"
+    },
+    {
+      "path": "vnpy_ctp/api/include/mac/ctp/ThostFtdcMdApi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4d7d23d369fd1ef76047085fe7245ba33e9e7e",
+      "size": 6558,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/3e4d7d23d369fd1ef76047085fe7245ba33e9e7e"
+    },
+    {
+      "path": "vnpy_ctp/api/include/mac/ctp/ThostFtdcTraderApi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14eb42175139bdc917cbc0c3f026e40ee74ca94",
+      "size": 51342,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/a14eb42175139bdc917cbc0c3f026e40ee74ca94"
+    },
+    {
+      "path": "vnpy_ctp/api/include/mac/ctp/ThostFtdcUserApiDataType.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36595f81fc2eaadb8565783f7a6b5a4720c288fa",
+      "size": 288713,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/36595f81fc2eaadb8565783f7a6b5a4720c288fa"
+    },
+    {
+      "path": "vnpy_ctp/api/include/mac/ctp/ThostFtdcUserApiStruct.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d92013fec5254628ddd314cf103e81a97f79c8a",
+      "size": 348447,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6d92013fec5254628ddd314cf103e81a97f79c8a"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Headers",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "a177d2a6b92600696030834c319f5e1434f9ee6a",
+      "size": 24,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/a177d2a6b92600696030834c319f5e1434f9ee6a"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Resources",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "953ee36f3bb709faf58a351e0b33c353e337c0a2",
+      "size": 26,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/953ee36f3bb709faf58a351e0b33c353e337c0a2"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/Headers/ThostFtdcMdApi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4d7d23d369fd1ef76047085fe7245ba33e9e7e",
+      "size": 6558,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/3e4d7d23d369fd1ef76047085fe7245ba33e9e7e"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/Headers/ThostFtdcUserApiDataType.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36595f81fc2eaadb8565783f7a6b5a4720c288fa",
+      "size": 288713,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/36595f81fc2eaadb8565783f7a6b5a4720c288fa"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/Headers/ThostFtdcUserApiStruct.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d92013fec5254628ddd314cf103e81a97f79c8a",
+      "size": 348447,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6d92013fec5254628ddd314cf103e81a97f79c8a"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/Resources/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01297ad1f8adadb819f4b0b3065bcc9e931abdb1",
+      "size": 1296,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/01297ad1f8adadb819f4b0b3065bcc9e931abdb1"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/_CodeSignature/CodeResources",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a4eacfa53104138c37d7b0bb8e4e6345ee26e9c",
+      "size": 2898,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/5a4eacfa53104138c37d7b0bb8e4e6345ee26e9c"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/A/thostmduserapi_se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "073c1ac77c8ccc018abe74362b0640d3964f2f98",
+      "size": 7777840,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/073c1ac77c8ccc018abe74362b0640d3964f2f98"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/Versions/Current",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "8c7e5a667f1b771847fe88c01c3de34413a1b220",
+      "size": 1,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/8c7e5a667f1b771847fe88c01c3de34413a1b220"
+    },
+    {
+      "path": "vnpy_ctp/api/thostmduserapi_se.framework/thostmduserapi_se",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "0d22b1b4deaa3d31c89c1046dda2f2633380692b",
+      "size": 34,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/0d22b1b4deaa3d31c89c1046dda2f2633380692b"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Headers",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "a177d2a6b92600696030834c319f5e1434f9ee6a",
+      "size": 24,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/a177d2a6b92600696030834c319f5e1434f9ee6a"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Resources",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "953ee36f3bb709faf58a351e0b33c353e337c0a2",
+      "size": 26,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/953ee36f3bb709faf58a351e0b33c353e337c0a2"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/Headers/ThostFtdcTraderApi.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14eb42175139bdc917cbc0c3f026e40ee74ca94",
+      "size": 51342,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/a14eb42175139bdc917cbc0c3f026e40ee74ca94"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/Headers/ThostFtdcUserApiDataType.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36595f81fc2eaadb8565783f7a6b5a4720c288fa",
+      "size": 288713,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/36595f81fc2eaadb8565783f7a6b5a4720c288fa"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/Headers/ThostFtdcUserApiStruct.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d92013fec5254628ddd314cf103e81a97f79c8a",
+      "size": 348447,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6d92013fec5254628ddd314cf103e81a97f79c8a"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/Resources/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6b6c9558ff96bd06a3c4206411c214e5cc16bfc",
+      "size": 1296,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/f6b6c9558ff96bd06a3c4206411c214e5cc16bfc"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/_CodeSignature/CodeResources",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85543ed929205fa1cdb1230a4559338f65706a2b",
+      "size": 2902,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/85543ed929205fa1cdb1230a4559338f65706a2b"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/A/thosttraderapi_se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f611dba7306b8ad6b752be6582e49aca03203e1",
+      "size": 8701376,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/5f611dba7306b8ad6b752be6582e49aca03203e1"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/Versions/Current",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "8c7e5a667f1b771847fe88c01c3de34413a1b220",
+      "size": 1,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/8c7e5a667f1b771847fe88c01c3de34413a1b220"
+    },
+    {
+      "path": "vnpy_ctp/api/thosttraderapi_se.framework/thosttraderapi_se",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "6bc15757ad2fd8ef265caf54803f14f31ec14e33",
+      "size": 34,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6bc15757ad2fd8ef265caf54803f14f31ec14e33"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctp.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbbba6bba9da032ef32c1fb391ca33c5fa8c9dff",
+      "size": 4067,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/bbbba6bba9da032ef32c1fb391ca33c5fa8c9dff"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/dllmain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6785c0ec9ddae7349cc3fb722185c838165011be",
+      "size": 429,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6785c0ec9ddae7349cc3fb722185c838165011be"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/stdafx.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4f341c7b247a19f9f24bba29582643f79a0751",
+      "size": 20,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/fd4f341c7b247a19f9f24bba29582643f79a0751"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/stdafx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56244c6608b93c20525bf0d6053b9a2b39484a79",
+      "size": 359,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/56244c6608b93c20525bf0d6053b9a2b39484a79"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f100f3af812f0e16ec37f60befcddc68ca7e201f",
+      "size": 26363,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/f100f3af812f0e16ec37f60befcddc68ca7e201f"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd0c7484460d893a2412df2d214be49356e80ce2",
+      "size": 6322,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/bd0c7484460d893a2412df2d214be49356e80ce2"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctptd/dllmain.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6785c0ec9ddae7349cc3fb722185c838165011be",
+      "size": 429,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6785c0ec9ddae7349cc3fb722185c838165011be"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctptd/stdafx.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4f341c7b247a19f9f24bba29582643f79a0751",
+      "size": 20,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/fd4f341c7b247a19f9f24bba29582643f79a0751"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctptd/stdafx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88cf2f868f6d5fa4d63295deb2f269031360dc01",
+      "size": 358,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/88cf2f868f6d5fa4d63295deb2f269031360dc01"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctptd/vnctptd.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fbedc2680527e1f3426657b91296f249a1c51c1",
+      "size": 493587,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/3fbedc2680527e1f3426657b91296f249a1c51c1"
+    },
+    {
+      "path": "vnpy_ctp/api/vnctp/vnctptd/vnctptd.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a27404dab494292e14bbc37d6d8e7448c067159",
+      "size": 63151,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/5a27404dab494292e14bbc37d6d8e7448c067159"
+    },
+    {
+      "path": "vnpy_ctp/gateway/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d3f9f5abdea022a92f71eb311d4683e9215c08c",
+      "size": 63,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/6d3f9f5abdea022a92f71eb311d4683e9215c08c"
+    },
+    {
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b0434ef86f622fd8bf3c8de904df5eb6b3109a6",
+      "size": 29399,
+      "url": "https://api.github.com/repos/vnpy/vnpy_ctp/git/blobs/9b0434ef86f622fd8bf3c8de904df5eb6b3109a6"
+    }
+  ]
+}

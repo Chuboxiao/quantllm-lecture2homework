@@ -1,0 +1,109 @@
+{
+  "selected": "market_down_day",
+  "round": 2,
+  "qualified_all_development_periods": false,
+  "fallback_diagnostic_only": true,
+  "selection_rule": "diagnostic fallback: all four periods positive after-cost gross and positive edge, >=20 days and 300 selections; maximise weakest after-cost gross",
+  "selection_pool_size": 1,
+  "development": {
+    "train": {
+      "days": 172,
+      "signals": 2566,
+      "stocks_per_day": 290.27906976744185,
+      "signal_mean": 0.006459433827510892,
+      "signal_median_across_days": 0.0018063339024864122,
+      "signal_worst_case_mean": -0.00868929488098657,
+      "baseline_mean": 0.0032117039824438517,
+      "edge": 0.0032477298450670393,
+      "edge_sd": 0.026252827955487616,
+      "edge_median_across_days": 0.0029101178943422698,
+      "signal_up_rate": 0.513392474303762,
+      "baseline_up_rate": 0.49875817193147953,
+      "rank_ic": 0.029345139496622565,
+      "rank_ic_days": 172,
+      "entry_no_fills": 27,
+      "unclosed_at_horizon": 34,
+      "after_0p3pct_cost_sensitivity": 0.003459433827510892,
+      "edge_naive_95pct_interval": [
+        -0.0006757185107246644,
+        0.007171178200858743
+      ]
+    },
+    "valid": {
+      "days": 82,
+      "signals": 1390,
+      "stocks_per_day": 292.9756097560976,
+      "signal_mean": 0.004410389329120551,
+      "signal_median_across_days": 0.004713133757532684,
+      "signal_worst_case_mean": -0.00042635868173100455,
+      "baseline_mean": 0.0037015742832888945,
+      "edge": 0.0007088150458316549,
+      "edge_sd": 0.024987357190464427,
+      "edge_median_across_days": 0.002491748547575682,
+      "signal_up_rate": 0.5215348719718952,
+      "baseline_up_rate": 0.5098907419422386,
+      "rank_ic": 0.010082233396912523,
+      "rank_ic_days": 82,
+      "entry_no_fills": 2,
+      "unclosed_at_horizon": 8,
+      "after_0p3pct_cost_sensitivity": 0.0014103893291205509,
+      "edge_naive_95pct_interval": [
+        -0.004699593248924086,
+        0.006117223340587397
+      ]
+    },
+    "old_dev": {
+      "days": 71,
+      "signals": 1126,
+      "stocks_per_day": 299.80281690140845,
+      "signal_mean": 0.004597205930110407,
+      "signal_median_across_days": 0.0017417186913810667,
+      "signal_worst_case_mean": 0.004597205930110407,
+      "baseline_mean": 0.002135925524684799,
+      "edge": 0.0024612804054256103,
+      "edge_sd": 0.023711507606901605,
+      "edge_median_across_days": 0.0011675466533020056,
+      "signal_up_rate": 0.4956224917492524,
+      "baseline_up_rate": 0.4850930331150783,
+      "rank_ic": 0.008478173006803095,
+      "rank_ic_days": 71,
+      "entry_no_fills": 0,
+      "unclosed_at_horizon": 0,
+      "after_0p3pct_cost_sensitivity": 0.001597205930110407,
+      "edge_naive_95pct_interval": [
+        -0.0030542345285093806,
+        0.0079767953393606
+      ]
+    },
+    "new_dev": {
+      "days": 33,
+      "signals": 535,
+      "stocks_per_day": 299.0,
+      "signal_mean": 0.00783099784288382,
+      "signal_median_across_days": 0.0006155447010049997,
+      "signal_worst_case_mean": 0.006279404200633377,
+      "baseline_mean": 0.005905529130351987,
+      "edge": 0.0019254687125318337,
+      "edge_sd": 0.022405898258331596,
+      "edge_median_across_days": -0.001450266138431952,
+      "signal_up_rate": 0.488231844694693,
+      "baseline_up_rate": 0.4776960162385976,
+      "rank_ic": 0.0017542767272899075,
+      "rank_ic_days": 33,
+      "entry_no_fills": 0,
+      "unclosed_at_horizon": 1,
+      "after_0p3pct_cost_sensitivity": 0.004830997842883819,
+      "edge_naive_95pct_interval": [
+        -0.005719249134316912,
+        0.00957018655938058
+      ]
+    }
+  },
+  "teacher_hashes": {
+    "filters.pkl": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24",
+    "base_dataset.pkl": "4248f100c5d2e5f0bbcaa6b2b1790b5f0fddeb815e65aff0cc4388eb52701465"
+  },
+  "fresh_parquet_sha256": "46d6357da64275ed6285750158bd4be5857c85ce902038cae3a0486e2aa6cdc6",
+  "locked_code_sha256": "900c7879c03611f11b274013ffad7b0571bf0e9a81b4765a33ffe7173b817d2f",
+  "holdout_viewed": false
+}

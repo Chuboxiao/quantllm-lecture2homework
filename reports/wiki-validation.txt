@@ -1,0 +1,2 @@
+PASS: 17 wiki pages, 178 local links, 48 source references; source/material hashes match.
+Scope: link paths, index coverage, source symbols/lines, and hashes. Not a trading runtime test or semantic proof of all notes.

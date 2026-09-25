@@ -1,0 +1,23 @@
+{
+  "provider": "BaoStock",
+  "api": "query_history_k_data_plus",
+  "provider_url": "https://github.com/zxygithub/baostock",
+  "retrieved_at": "2026-09-24T12:42:31",
+  "adjustflag": "2 (forward adjusted, as retrieved in 2026)",
+  "begin": "2023-09-01",
+  "end": "2026-09-23",
+  "universe": "CSI300 members on 2023-12-29, frozen, from teacher membership cache",
+  "symbols": 300,
+  "rows": 221652,
+  "first": "2023-09-01",
+  "last": "2026-09-23",
+  "fresh_symbols": 300,
+  "fresh_rows": 144966,
+  "zero_volume_fresh_rows": 0,
+  "nontrading_fresh_rows": 0,
+  "st_fresh_rows": 0,
+  "forward_2026_rows": 52686,
+  "forward_2026_dates": 177,
+  "parquet_sha256": "46d6357da64275ed6285750158bd4be5857c85ce902038cae3a0486e2aa6cdc6",
+  "source_membership_sha256": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24"
+}

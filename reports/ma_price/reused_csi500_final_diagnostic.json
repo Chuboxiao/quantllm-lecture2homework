@@ -1,0 +1,161 @@
+{
+  "factor": "close_lower_half",
+  "status": "retrospective diagnostic after prior CSI500 outcome view; not an independent test",
+  "selection_contaminated_by_prior_view_of_this_pool": true,
+  "no_factor_revision_allowed": true,
+  "final_candidate_lock_sha256": "195be107e0beebeb857daacd9935aa5181a7eaa4b4ae4efd9e73582b31e7b2e5",
+  "earlier_csi500_result_sha256": "652787e67b9389323664db50124b0e5164c74d8cc60d69cc471fdfd23a53e64b",
+  "bars_sha256": "d370dc7d2e6ced7ba344733552112ec5a14862c0f70c79ae79e5139001962d04",
+  "evaluation_script_sha256": "625efc2fc3441a741979056122369fd518d01007020866b9f95d0ef86b3e9d94",
+  "metadata": {
+    "source": "fresh",
+    "potential_signal_rows": 327003,
+    "eligible_t_day_rows": 325867,
+    "sample_dates": 656,
+    "factors": 12,
+    "future_volume_or_extreme_move_exclusion": false,
+    "entry_no_fill_count_all_eligible": 48,
+    "unclosed_count_all_eligible": 187,
+    "scheduled_dates": 109,
+    "transfer_eligible_rows": 54147,
+    "transfer_signal_dates_with_eligible": 109
+  },
+  "periods": {
+    "2024": {
+      "scheduled_evaluable_dates": 39,
+      "statistics": {
+        "days": 23,
+        "signals": 100,
+        "stocks_per_day": 498.5217391304348,
+        "signal_mean": 0.020378934406842363,
+        "signal_median_across_days": -0.011943539630836053,
+        "signal_worst_case_mean": 0.020378934406842363,
+        "baseline_mean": 0.00034683980617768715,
+        "edge": 0.020032094600664675,
+        "edge_sd": 0.11559774557701231,
+        "edge_median_across_days": -0.010530495958361181,
+        "signal_up_rate": 0.40870783095847035,
+        "baseline_up_rate": 0.3856832310732005,
+        "rank_ic": -0.004236921440025024,
+        "rank_ic_days": 23,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.017378934406842364,
+        "edge_naive_95pct_interval": [
+          -0.027211345922542002,
+          0.06727553512387136
+        ]
+      },
+      "net_cost_interval": [
+        -0.025818589696706244,
+        0.0640863106365926
+      ],
+      "edge_interval": [
+        -0.012276984028981164,
+        0.0668666297628498
+      ]
+    },
+    "2025": {
+      "scheduled_evaluable_dates": 40,
+      "statistics": {
+        "days": 32,
+        "signals": 246,
+        "stocks_per_day": 496.84375,
+        "signal_mean": 0.011353026697497572,
+        "signal_median_across_days": -0.0014459418036221472,
+        "signal_worst_case_mean": 0.011353026697497572,
+        "baseline_mean": 0.007237265203203391,
+        "edge": 0.004115761494294179,
+        "edge_sd": 0.046510195603452244,
+        "edge_median_across_days": -0.01022970167403751,
+        "signal_up_rate": 0.43385217468397613,
+        "baseline_up_rate": 0.5116195189697021,
+        "rank_ic": -0.017634279533396944,
+        "rank_ic_days": 32,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.008353026697497573,
+        "edge_naive_95pct_interval": [
+          -0.011999199111407599,
+          0.020230722099995956
+        ]
+      },
+      "net_cost_interval": [
+        -0.0061966890425192885,
+        0.024749338490698287
+      ],
+      "edge_interval": [
+        -0.01162105122225494,
+        0.022921146388846056
+      ]
+    },
+    "2026": {
+      "scheduled_evaluable_dates": 28,
+      "statistics": {
+        "days": 21,
+        "signals": 76,
+        "stocks_per_day": 494.14285714285717,
+        "signal_mean": 0.010201604836947506,
+        "signal_median_across_days": -0.0034554312522554476,
+        "signal_worst_case_mean": 0.010201604836947506,
+        "baseline_mean": -0.001651337493917431,
+        "edge": 0.011852942330864938,
+        "edge_sd": 0.05992950434357836,
+        "edge_median_across_days": 0.01387382882402368,
+        "signal_up_rate": 0.45975056689342403,
+        "baseline_up_rate": 0.42289405456835216,
+        "rank_ic": -0.0010745177689445318,
+        "rank_ic_days": 21,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.0072016048369475056,
+        "edge_naive_95pct_interval": [
+          -0.01377933007059411,
+          0.03748521473232398
+        ]
+      },
+      "net_cost_interval": [
+        -0.011350020473947044,
+        0.03201286745394642
+      ],
+      "edge_interval": [
+        -0.0048616488881477096,
+        0.03661013318173202
+      ]
+    },
+    "combined": {
+      "scheduled_evaluable_dates": 109,
+      "statistics": {
+        "days": 78,
+        "signals": 432,
+        "stocks_per_day": 496.61538461538464,
+        "signal_mean": 0.01610368733930605,
+        "signal_median_across_days": -0.0041006916171941465,
+        "signal_worst_case_mean": 0.01610368733930605,
+        "baseline_mean": 0.0026464434588252795,
+        "edge": 0.013457243880480765,
+        "edge_sd": 0.07813162465093462,
+        "edge_median_across_days": -0.006098567626199406,
+        "signal_up_rate": 0.43724331119693105,
+        "baseline_up_rate": 0.44920820384629717,
+        "rank_ic": -0.006270265665673825,
+        "rank_ic_days": 78,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": 0.013103687339306051,
+        "edge_naive_95pct_interval": [
+          -0.003882218389120406,
+          0.030796706150081937
+        ]
+      },
+      "net_cost_interval": [
+        -0.0030583986747799653,
+        0.030565408776665418
+      ],
+      "edge_interval": [
+        -0.0014217556019701593,
+        0.031696853113651384
+      ]
+    }
+  }
+}

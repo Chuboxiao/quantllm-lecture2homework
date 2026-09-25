@@ -1,0 +1,50 @@
+{
+  "study": "round three of user-authorized MA+price/volume study",
+  "clue": "isolate positive opening gap from MA alignment and joint widening, then compare paired conditions",
+  "candidate_count": 12,
+  "candidate_formulas": {
+    "gap_up_only": "positive open / previous adjusted close - 1, without MA condition",
+    "aligned_gap_up": "positive gap with MA5>MA20>MA60>MA120",
+    "widen_gap_up_control": "round-two control: positive gap times joint widening",
+    "aligned_gap_up_no_widen": "positive gap with aligned MAs but without positive joint widening",
+    "widen_gap_up_green": "joint widening times positive gap times positive intraday body / ATR14",
+    "widen_gap_up_red": "joint widening times positive gap times negative intraday body / ATR14",
+    "widen_gap_up_volume_up": "joint widening times positive gap times positive(volume / mean20 - 1)",
+    "widen_gap_up_volume_down": "joint widening times positive gap times positive(1 - volume / mean20)",
+    "widen_gap_up_breakout": "joint widening times positive gap if close > previous 20-bar high",
+    "widen_gap_up_inside": "joint widening times positive gap if close <= previous 20-bar high",
+    "widen_gap_up_small": "joint widening times positive gap if open-previous close <= 0.5 ATR14",
+    "widen_gap_up_large": "joint widening times positive gap if open-previous close > 0.5 ATR14"
+  },
+  "control_is_previously_seen": "widen_gap_up_control",
+  "data_and_return_rules": "identical to round one; historical CSI300 exploration only",
+  "periods": {
+    "train_2008_2016": [
+      "2008-01-02",
+      "2016-12-31"
+    ],
+    "valid_2017_2022": [
+      "2017-01-01",
+      "2022-12-31"
+    ],
+    "recent_2023_2026": [
+      "2023-01-01",
+      "2026-09-23"
+    ]
+  },
+  "primary": "own five-day mean return and up rate; 0.3% cost sensitivity",
+  "auxiliary": "same-day cohort edge and rank IC; not vetoes",
+  "historical_screen": "three eras each >=20 signal dates, >=200 positions, own mean >0.3%",
+  "csi500_used_for_round_three_selection": false,
+  "all_dates_previously_viewed": true,
+  "script_sha256": "cbebfaf55c95d396b58bb1cd1802ab3ec7ec9fd5f248cae094ff665c72278b15",
+  "round_one_code_sha256": "4f0c26dfe930c3787a1c8fef54fafad17e26d5330a05e336d15324613a7a6c40",
+  "round_two_code_sha256": "b946c1a9dc3f73121f49d81dfb917bd2c9ccaa30932469e77b932c385ae169cf",
+  "round_two_result_sha256": "fc190b52cf0a88fd33ca697812767a82788ab4ec9cb9aaab0c4b8361bae323ff",
+  "failed_transfer_result_sha256": "652787e67b9389323664db50124b0e5164c74d8cc60d69cc471fdfd23a53e64b",
+  "data_sha256": {
+    "bars_qfq.parquet": "e75d33059c8cf2bb0fab01ce1a6e578d49c76b9317cbdf3db8d19fbc87776129",
+    "trade_calendar.parquet": "ddf49ed07a9b55898722c87e62066209b2dcea936f7c62b9cb72ea4b518854f8",
+    "membership_signal_days.parquet": "59e49d82c4e94efbc992b627490d4b73986a622e80ac2e9e177f3e6ba10e2c68"
+  }
+}

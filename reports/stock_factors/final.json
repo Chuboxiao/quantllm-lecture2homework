@@ -1,0 +1,65 @@
+{
+  "selected": "reversal_5_plus_volume",
+  "selected_round": 3,
+  "selection_based_on": "train/valid round files only; maximum validation edge among qualifying candidates",
+  "train": {
+    "days": 339,
+    "signals": 49953,
+    "stocks_per_day": 283.95575221238937,
+    "signal_mean": 0.0035466217075629265,
+    "baseline_mean": 0.0019098865510128531,
+    "signal_up_rate": 0.511879299227095,
+    "baseline_up_rate": 0.49751256730126975,
+    "edge": 0.0016367351565500729,
+    "edge_daily_sd": 0.010463364202065322,
+    "edge_positive_day_fraction": 0.5811209439528023,
+    "rank_ic": 0.0605008272554505,
+    "rank_ic_daily_sd": 0.18244027700177606,
+    "signal_return_after_0p3pct_cost_sensitivity": 0.0005466217075629264
+  },
+  "valid": {
+    "days": 159,
+    "signals": 22570,
+    "stocks_per_day": 291.57861635220127,
+    "signal_mean": 0.0034032837946149975,
+    "baseline_mean": 0.0032944913520288254,
+    "signal_up_rate": 0.5023536642476333,
+    "baseline_up_rate": 0.5022793821113035,
+    "edge": 0.00010879244258617262,
+    "edge_daily_sd": 0.007434927608298066,
+    "edge_positive_day_fraction": 0.48427672955974843,
+    "rank_ic": 0.025464482837853797,
+    "rank_ic_daily_sd": 0.16653190526155143,
+    "signal_return_after_0p3pct_cost_sensitivity": 0.00040328379461499744
+  },
+  "test": {
+    "days": 120,
+    "signals": 18845,
+    "stocks_per_day": 299.64166666666665,
+    "signal_mean": -0.0005070785255168721,
+    "baseline_mean": -0.000613895331421365,
+    "signal_up_rate": 0.4580622665806841,
+    "baseline_up_rate": 0.4575073153024715,
+    "edge": 0.00010681680590449249,
+    "edge_daily_sd": 0.007520324515275584,
+    "edge_positive_day_fraction": 0.5166666666666667,
+    "rank_ic": 0.009431037682623183,
+    "rank_ic_daily_sd": 0.1480457069907017,
+    "signal_return_after_0p3pct_cost_sensitivity": -0.003507078525516872
+  },
+  "test_viewed_once": true,
+  "cache_hashes": {
+    "filters.pkl": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24",
+    "base_dataset.pkl": "4248f100c5d2e5f0bbcaa6b2b1790b5f0fddeb815e65aff0cc4388eb52701465"
+  },
+  "data": {
+    "raw_member_signal_rows": 194700,
+    "eligible_rows": 187443,
+    "sample_dates": 649,
+    "calendar_step": 6,
+    "eligibility": "member at signal t; nonzero volume at t, t+1 and t+6; excludes features within 60 stock bars after >25% close jump and labels crossing such a jump; finite return",
+    "normalized_prices": true,
+    "historical_membership_applied": true,
+    "unresolved": "Corporate-action adjustment and actual fillability not verified; future-volume filter is ex-post censoring."
+  }
+}

@@ -1,0 +1,22 @@
+--- a/vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.cpp
++++ b/vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.cpp
+@@ -924,7 +924,7 @@
+ 		.def("release", &MdApi::release)
+ 		.def("init", &MdApi::init)
+ 		.def("join", &MdApi::join)
+-		.def("exit", &MdApi::exit)
++		.def("exit", &MdApi::exit, pybind11::call_guard<pybind11::gil_scoped_release>())
+ 		.def("getTradingDay", &MdApi::getTradingDay)
+ 		.def("registerFront", &MdApi::registerFront)
+ 		.def("registerNameServer", &MdApi::registerNameServer)
+--- a/vnpy_ctp/api/vnctp/vnctptd/vnctptd.cpp
++++ b/vnpy_ctp/api/vnctp/vnctptd/vnctptd.cpp
+@@ -13884,7 +13884,7 @@
+         .def("release", &TdApi::release)
+         .def("init", &TdApi::init)
+         .def("join", &TdApi::join)
+-        .def("exit", &TdApi::exit)
++        .def("exit", &TdApi::exit, pybind11::call_guard<pybind11::gil_scoped_release>())
+         .def("getTradingDay", &TdApi::getTradingDay)
+ 		.def("getApiVersion", &TdApi::getApiVersion)
+         .def("registerFront", &TdApi::registerFront)

@@ -1,0 +1,416 @@
+{
+  "round": 2,
+  "clue": "whether the MA gap is widening, slowing, or accelerating",
+  "train": [
+    "2008-01-02",
+    "2016-12-31"
+  ],
+  "valid": [
+    "2017-01-01",
+    "2020-12-31"
+  ],
+  "target": "t+1 open to t+6 open (five market trading-day intervals)",
+  "primary": "signal>0 daily mean raw return and excess vs same-day eligible cohort",
+  "secondary": "same-day Spearman rank IC",
+  "screen": "train and valid >=60 days, >=500 signals, gross>0.3%, edge>0.15pp, rank IC>0.01",
+  "test_viewed": false,
+  "source_hashes": {
+    "filters.pkl": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24",
+    "base_dataset.pkl": "4248f100c5d2e5f0bbcaa6b2b1790b5f0fddeb815e65aff0cc4388eb52701465"
+  },
+  "data": {
+    "source": "teacher",
+    "potential_signal_rows": 158400,
+    "eligible_rows": 151186,
+    "sample_dates": 528,
+    "factors": 12,
+    "historical_membership": true,
+    "frozen_cohort": false
+  },
+  "results": [
+    {
+      "name": "gap_delta3",
+      "train": {
+        "days": 346,
+        "signals": 51392,
+        "stocks_per_day": 283.9508670520231,
+        "signal_mean": 0.0004873152245496851,
+        "baseline_mean": 0.0023632345506061346,
+        "edge": -0.0018759193260564498,
+        "edge_sd": 0.010919985868590824,
+        "edge_positive_day_fraction": 0.48265895953757226,
+        "signal_up_rate": 0.48588634470531433,
+        "baseline_up_rate": 0.49852833461542556,
+        "rank_ic": -0.023347442516333302,
+        "after_0p3pct_cost_sensitivity": -0.002512684775450315
+      },
+      "valid": {
+        "days": 158,
+        "signals": 23786,
+        "stocks_per_day": 291.63291139240505,
+        "signal_mean": 0.0029923809907137547,
+        "baseline_mean": 0.0035006280031607564,
+        "edge": -0.000508247012447003,
+        "edge_sd": 0.008443599733075482,
+        "edge_positive_day_fraction": 0.43037974683544306,
+        "signal_up_rate": 0.502768782113562,
+        "baseline_up_rate": 0.5047329413712496,
+        "rank_ic": -0.010772261491545598,
+        "after_0p3pct_cost_sensitivity": -7.6190092862453256e-06
+      },
+      "qualifies": false
+    },
+    {
+      "name": "gap_delta5",
+      "train": {
+        "days": 344,
+        "signals": 51128,
+        "stocks_per_day": 283.99418604651163,
+        "signal_mean": 0.0015553634795366308,
+        "baseline_mean": 0.0023215803818567872,
+        "edge": -0.0007662169023201561,
+        "edge_sd": 0.010098565423802875,
+        "edge_positive_day_fraction": 0.5203488372093024,
+        "signal_up_rate": 0.49397071383597296,
+        "baseline_up_rate": 0.5013700297964081,
+        "rank_ic": -0.010012049478363703,
+        "after_0p3pct_cost_sensitivity": -0.0014446365204633692
+      },
+      "valid": {
+        "days": 157,
+        "signals": 24198,
+        "stocks_per_day": 291.5987261146497,
+        "signal_mean": 0.0038447363224962234,
+        "baseline_mean": 0.0037728508760328885,
+        "edge": 7.188544646333495e-05,
+        "edge_sd": 0.007090322247427849,
+        "edge_positive_day_fraction": 0.4713375796178344,
+        "signal_up_rate": 0.5059334110152129,
+        "baseline_up_rate": 0.506435962257256,
+        "rank_ic": -0.0031593662394727457,
+        "after_0p3pct_cost_sensitivity": 0.0008447363224962233
+      },
+      "qualifies": false
+    },
+    {
+      "name": "gap_delta10",
+      "train": {
+        "days": 341,
+        "signals": 51366,
+        "stocks_per_day": 283.96187683284455,
+        "signal_mean": 0.0031389428873620407,
+        "baseline_mean": 0.002297662857498673,
+        "edge": 0.0008412800298633679,
+        "edge_sd": 0.009000744772134861,
+        "edge_positive_day_fraction": 0.5571847507331378,
+        "signal_up_rate": 0.5046459996139573,
+        "baseline_up_rate": 0.5001713744968403,
+        "rank_ic": 0.01157541084357252,
+        "after_0p3pct_cost_sensitivity": 0.0001389428873620406
+      },
+      "valid": {
+        "days": 157,
+        "signals": 24095,
+        "stocks_per_day": 291.687898089172,
+        "signal_mean": 0.004041566479880942,
+        "baseline_mean": 0.003948593360201649,
+        "edge": 9.297311967929381e-05,
+        "edge_sd": 0.00832904989290307,
+        "edge_positive_day_fraction": 0.46496815286624205,
+        "signal_up_rate": 0.5041296500561249,
+        "baseline_up_rate": 0.5090473709100202,
+        "rank_ic": -0.0026879499534979575,
+        "after_0p3pct_cost_sensitivity": 0.0010415664798809421
+      },
+      "qualifies": false
+    },
+    {
+      "name": "medium_gap_delta5",
+      "train": {
+        "days": 339,
+        "signals": 52118,
+        "stocks_per_day": 284.03834808259586,
+        "signal_mean": 0.0032265523511317254,
+        "baseline_mean": 0.002872852673536273,
+        "edge": 0.00035369967759545285,
+        "edge_sd": 0.009964459655851172,
+        "edge_positive_day_fraction": 0.5811209439528023,
+        "signal_up_rate": 0.5027897320386209,
+        "baseline_up_rate": 0.5002846614272847,
+        "rank_ic": 0.0022641563018902717,
+        "after_0p3pct_cost_sensitivity": 0.00022655235113172535
+      },
+      "valid": {
+        "days": 160,
+        "signals": 24131,
+        "stocks_per_day": 291.66875,
+        "signal_mean": 0.003587452004789912,
+        "baseline_mean": 0.0039404560405426475,
+        "edge": -0.0003530040357527362,
+        "edge_sd": 0.009193894035641078,
+        "edge_positive_day_fraction": 0.45625,
+        "signal_up_rate": 0.49679665411210205,
+        "baseline_up_rate": 0.507979026484132,
+        "rank_ic": -0.01263940751430212,
+        "after_0p3pct_cost_sensitivity": 0.000587452004789912
+      },
+      "qualifies": false
+    },
+    {
+      "name": "medium_gap_delta10",
+      "train": {
+        "days": 341,
+        "signals": 52061,
+        "stocks_per_day": 283.9736070381232,
+        "signal_mean": 0.001072894668483626,
+        "baseline_mean": 0.0013225412975264163,
+        "edge": -0.0002496466290427909,
+        "edge_sd": 0.010696647792706628,
+        "edge_positive_day_fraction": 0.5161290322580645,
+        "signal_up_rate": 0.4928398341302875,
+        "baseline_up_rate": 0.4933461009293723,
+        "rank_ic": 0.0036403504618886472,
+        "after_0p3pct_cost_sensitivity": -0.0019271053315163742
+      },
+      "valid": {
+        "days": 157,
+        "signals": 24096,
+        "stocks_per_day": 291.63057324840764,
+        "signal_mean": 0.002968322408962327,
+        "baseline_mean": 0.003711706078446369,
+        "edge": -0.0007433836694840415,
+        "edge_sd": 0.007998857401033786,
+        "edge_positive_day_fraction": 0.4394904458598726,
+        "signal_up_rate": 0.49024475472684215,
+        "baseline_up_rate": 0.5048737138503346,
+        "rank_ic": -0.02158515520978529,
+        "after_0p3pct_cost_sensitivity": -3.167759103767315e-05
+      },
+      "qualifies": false
+    },
+    {
+      "name": "gap_plus_delta5",
+      "train": {
+        "days": 340,
+        "signals": 50888,
+        "stocks_per_day": 284.1470588235294,
+        "signal_mean": 0.0018520412251906402,
+        "baseline_mean": 0.002949856341034378,
+        "edge": -0.0010978151158437378,
+        "edge_sd": 0.010270069840097477,
+        "edge_positive_day_fraction": 0.5205882352941177,
+        "signal_up_rate": 0.4935092887753429,
+        "baseline_up_rate": 0.5028451590674083,
+        "rank_ic": -0.024872350742129304,
+        "after_0p3pct_cost_sensitivity": -0.0011479587748093598
+      },
+      "valid": {
+        "days": 160,
+        "signals": 23370,
+        "stocks_per_day": 291.65625,
+        "signal_mean": 0.003733275596194063,
+        "baseline_mean": 0.0037848581252933806,
+        "edge": -5.1582529099317156e-05,
+        "edge_sd": 0.00908453259307146,
+        "edge_positive_day_fraction": 0.55625,
+        "signal_up_rate": 0.5047211647969747,
+        "baseline_up_rate": 0.5070340214702986,
+        "rank_ic": -0.009464219338350998,
+        "after_0p3pct_cost_sensitivity": 0.0007332755961940631
+      },
+      "qualifies": false
+    },
+    {
+      "name": "gap_minus_delta5",
+      "train": {
+        "days": 341,
+        "signals": 51571,
+        "stocks_per_day": 284.27859237536654,
+        "signal_mean": 0.00014216468086211809,
+        "baseline_mean": 0.0004564070252659342,
+        "edge": -0.0003142423444038165,
+        "edge_sd": 0.009204132780849346,
+        "edge_positive_day_fraction": 0.49560117302052786,
+        "signal_up_rate": 0.48784757195212664,
+        "baseline_up_rate": 0.4902135783965976,
+        "rank_ic": -0.009409021618382273,
+        "after_0p3pct_cost_sensitivity": -0.002857835319137882
+      },
+      "valid": {
+        "days": 160,
+        "signals": 22959,
+        "stocks_per_day": 291.66875,
+        "signal_mean": 0.0033780431819568106,
+        "baseline_mean": 0.0034385989727984045,
+        "edge": -6.055579084159397e-05,
+        "edge_sd": 0.008153247186643812,
+        "edge_positive_day_fraction": 0.525,
+        "signal_up_rate": 0.49472285987590886,
+        "baseline_up_rate": 0.5025581968105849,
+        "rank_ic": -0.019051621980676753,
+        "after_0p3pct_cost_sensitivity": 0.0003780431819568105
+      },
+      "qualifies": false
+    },
+    {
+      "name": "slope_spread_short",
+      "train": {
+        "days": 346,
+        "signals": 50983,
+        "stocks_per_day": 283.985549132948,
+        "signal_mean": 0.0012185060649029563,
+        "baseline_mean": 0.0025158201861994168,
+        "edge": -0.0012973141212964594,
+        "edge_sd": 0.01075453101779055,
+        "edge_positive_day_fraction": 0.5,
+        "signal_up_rate": 0.4909498430109128,
+        "baseline_up_rate": 0.4986888231455935,
+        "rank_ic": -0.010189138926998407,
+        "after_0p3pct_cost_sensitivity": -0.0017814939350970437
+      },
+      "valid": {
+        "days": 157,
+        "signals": 23769,
+        "stocks_per_day": 291.5987261146497,
+        "signal_mean": 0.0034786576482408347,
+        "baseline_mean": 0.0034488950147953867,
+        "edge": 2.9762633445446542e-05,
+        "edge_sd": 0.008307916855593714,
+        "edge_positive_day_fraction": 0.4394904458598726,
+        "signal_up_rate": 0.5062121235519408,
+        "baseline_up_rate": 0.5044092304528781,
+        "rank_ic": -0.0021170953636826966,
+        "after_0p3pct_cost_sensitivity": 0.00047865764824083466
+      },
+      "qualifies": false
+    },
+    {
+      "name": "slope_spread_medium",
+      "train": {
+        "days": 336,
+        "signals": 51447,
+        "stocks_per_day": 284.0,
+        "signal_mean": 0.0027662470689746935,
+        "baseline_mean": 0.0017844077122567798,
+        "edge": 0.0009818393567179134,
+        "edge_sd": 0.010231330383786473,
+        "edge_positive_day_fraction": 0.5684523809523809,
+        "signal_up_rate": 0.5010221221879737,
+        "baseline_up_rate": 0.4960798822037197,
+        "rank_ic": 0.016272936651582887,
+        "after_0p3pct_cost_sensitivity": -0.0002337529310253066
+      },
+      "valid": {
+        "days": 155,
+        "signals": 24252,
+        "stocks_per_day": 291.4451612903226,
+        "signal_mean": 0.0034059131423979394,
+        "baseline_mean": 0.0037935653130344417,
+        "edge": -0.00038765217063650216,
+        "edge_sd": 0.00812864421045858,
+        "edge_positive_day_fraction": 0.4258064516129032,
+        "signal_up_rate": 0.499932632585583,
+        "baseline_up_rate": 0.5066547576430481,
+        "rank_ic": -0.012092667553539282,
+        "after_0p3pct_cost_sensitivity": 0.0004059131423979393
+      },
+      "qualifies": false
+    },
+    {
+      "name": "gap_acceleration",
+      "train": {
+        "days": 339,
+        "signals": 52210,
+        "stocks_per_day": 284.08554572271385,
+        "signal_mean": 0.0011821118095921579,
+        "baseline_mean": 0.002491620105468372,
+        "edge": -0.0013095082958762148,
+        "edge_sd": 0.008543641861395975,
+        "edge_positive_day_fraction": 0.41887905604719766,
+        "signal_up_rate": 0.4890821423380142,
+        "baseline_up_rate": 0.4992713681954452,
+        "rank_ic": -0.027081161631753125,
+        "after_0p3pct_cost_sensitivity": -0.0018178881904078422
+      },
+      "valid": {
+        "days": 161,
+        "signals": 23584,
+        "stocks_per_day": 291.69565217391306,
+        "signal_mean": 0.00295723408254583,
+        "baseline_mean": 0.003522992731303501,
+        "edge": -0.0005657586487576715,
+        "edge_sd": 0.0069513198110052275,
+        "edge_positive_day_fraction": 0.484472049689441,
+        "signal_up_rate": 0.5049662495122736,
+        "baseline_up_rate": 0.5044485094545503,
+        "rank_ic": -0.011276177382909525,
+        "after_0p3pct_cost_sensitivity": -4.276591745417009e-05
+      },
+      "qualifies": false
+    },
+    {
+      "name": "widening_positive_gap",
+      "train": {
+        "days": 302,
+        "signals": 31833,
+        "stocks_per_day": 284.1423841059603,
+        "signal_mean": 0.002233973022488312,
+        "baseline_mean": 0.002400122821481136,
+        "edge": -0.0001661497989928237,
+        "edge_sd": 0.01186672596595968,
+        "edge_positive_day_fraction": 0.4900662251655629,
+        "signal_up_rate": 0.4906997398413906,
+        "baseline_up_rate": 0.4995890104771224,
+        "rank_ic": -0.021342627501566392,
+        "after_0p3pct_cost_sensitivity": -0.0007660269775116879
+      },
+      "valid": {
+        "days": 150,
+        "signals": 14509,
+        "stocks_per_day": 291.75333333333333,
+        "signal_mean": 0.004292104376993782,
+        "baseline_mean": 0.003823488092940246,
+        "edge": 0.00046861628405353665,
+        "edge_sd": 0.010338913340074305,
+        "edge_positive_day_fraction": 0.48,
+        "signal_up_rate": 0.50523602317373,
+        "baseline_up_rate": 0.5061805646259054,
+        "rank_ic": -0.0007577932188125036,
+        "after_0p3pct_cost_sensitivity": 0.0012921043769937822
+      },
+      "qualifies": false
+    },
+    {
+      "name": "narrowing_positive_gap",
+      "train": {
+        "days": 243,
+        "signals": 18374,
+        "stocks_per_day": 284.0987654320988,
+        "signal_mean": 0.0005795551394305954,
+        "baseline_mean": 0.001064950622408622,
+        "edge": -0.0004853954829780265,
+        "edge_sd": 0.013419683807403427,
+        "edge_positive_day_fraction": 0.4897119341563786,
+        "signal_up_rate": 0.4856988319581132,
+        "baseline_up_rate": 0.4931359317503524,
+        "rank_ic": -0.00485698518643299,
+        "after_0p3pct_cost_sensitivity": -0.0024204448605694047
+      },
+      "valid": {
+        "days": 132,
+        "signals": 8032,
+        "stocks_per_day": 291.72727272727275,
+        "signal_mean": 0.003351099841342033,
+        "baseline_mean": 0.0033283075730954482,
+        "edge": 2.2792268246584326e-05,
+        "edge_sd": 0.012837451923810299,
+        "edge_positive_day_fraction": 0.4696969696969697,
+        "signal_up_rate": 0.4889476327362427,
+        "baseline_up_rate": 0.5009033061183099,
+        "rank_ic": -0.012331286959350245,
+        "after_0p3pct_cost_sensitivity": 0.00035109984134203305
+      },
+      "qualifies": false
+    }
+  ]
+}

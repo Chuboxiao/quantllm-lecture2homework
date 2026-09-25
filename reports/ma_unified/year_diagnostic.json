@@ -1,0 +1,121 @@
+{
+  "posthoc_diagnostic_only": true,
+  "factors": {
+    "uptrend_pullback": {
+      "2023": {
+        "days": 39,
+        "signals": 582,
+        "signal_mean": -0.0060640037576437334,
+        "edge": -0.002777226256719557,
+        "signal_up_rate": 0.3742720577562207,
+        "rank_ic": -0.021018475378732318,
+        "edge_naive_95pct_interval": [
+          -0.009629117398365677,
+          0.004074664884926564
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0
+      },
+      "2024": {
+        "days": 39,
+        "signals": 618,
+        "signal_mean": 0.00420505928337634,
+        "edge": 0.002090825314530363,
+        "signal_up_rate": 0.47469912566066413,
+        "rank_ic": 0.0170101322140793,
+        "edge_naive_95pct_interval": [
+          -0.0035128620489638185,
+          0.007694512678024544
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 1
+      },
+      "2025": {
+        "days": 40,
+        "signals": 686,
+        "signal_mean": 0.007225864332312209,
+        "edge": 0.001489940095623651,
+        "signal_up_rate": 0.5094426950328653,
+        "rank_ic": 0.006318990882847606,
+        "edge_naive_95pct_interval": [
+          -0.005175657790477524,
+          0.008155537981724826
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0
+      },
+      "2026": {
+        "days": 28,
+        "signals": 449,
+        "signal_mean": -0.010463360806396867,
+        "edge": -0.007886291763329622,
+        "signal_up_rate": 0.3642121741040914,
+        "rank_ic": -0.024061010480623424,
+        "edge_naive_95pct_interval": [
+          -0.019231690489634648,
+          0.0034591069629754043
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 1
+      }
+    },
+    "old_market_down_pullback": {
+      "2023": {
+        "days": 23,
+        "signals": 371,
+        "signal_mean": -0.002737053349804192,
+        "edge": -0.0017540697577451607,
+        "signal_up_rate": 0.41748057994861065,
+        "rank_ic": -0.01783481480437731,
+        "edge_naive_95pct_interval": [
+          -0.011293970379714975,
+          0.007785830864224654
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0
+      },
+      "2024": {
+        "days": 18,
+        "signals": 302,
+        "signal_mean": 0.0005933127417053562,
+        "edge": 5.61050157502826e-05,
+        "signal_up_rate": 0.46786662411662416,
+        "rank_ic": -0.0038488761208872574,
+        "edge_naive_95pct_interval": [
+          -0.006965258295198592,
+          0.007077468326699158
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 1
+      },
+      "2025": {
+        "days": 21,
+        "signals": 379,
+        "signal_mean": 0.005187443916503145,
+        "edge": 0.0009973012561725631,
+        "signal_up_rate": 0.4697786131996659,
+        "rank_ic": 0.027231824210105525,
+        "edge_naive_95pct_interval": [
+          -0.0090086808586266,
+          0.011003283370971726
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0
+      },
+      "2026": {
+        "days": 12,
+        "signals": 195,
+        "signal_mean": -0.0032986724203983527,
+        "edge": -0.007546200555527575,
+        "signal_up_rate": 0.42705291784239147,
+        "rank_ic": -0.02729565649939089,
+        "edge_naive_95pct_interval": [
+          -0.023838782113950067,
+          0.008746381002894918
+        ],
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0
+      }
+    }
+  }
+}

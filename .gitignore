@@ -1,0 +1,31 @@
+# Local credentials and machine state
+.env
+.env.*
+!.env.example
+configs/local/
+*.local.json
+.vntrader/
+.obsidian/
+.DS_Store
+
+# Python environments and generated files
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Upstream clones and local source materials (retain manifests instead)
+raw/repos/
+raw/course/*.pdf
+raw/course/*.zip
+
+# Local data and unsanitized runtime output
+data/*
+!data/README.md
+reports/local/
+*.log

@@ -1,0 +1,10 @@
+{
+  "symbol": "au2612",
+  "exchange": "SHFE",
+  "direction": "buy",
+  "volume": 1,
+  "threshold": null,
+  "max_loss": 100000,
+  "hold_seconds": 60,
+  "valid_until": null
+}

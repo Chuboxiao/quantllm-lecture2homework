@@ -1,0 +1,23 @@
+[
+  {
+    "file": "raw/course/第一讲.pdf",
+    "sha256": "8b71c902b9249cf9850257f2b6c6fbd1f60058a618fea00a876cc65fcf66cc90",
+    "source": "../第一讲.pdf"
+  },
+  {
+    "file": "raw/course/第二讲-VeighNa.pdf",
+    "sha256": "6b02e65b6fe835b779a026241eab2b2691cb2ae3be8b59b61478f495a64135c7",
+    "source": "../第二讲-VeighNa.pdf"
+  },
+  {
+    "file": "llm-wiki.md",
+    "sha256": "dc3efe98ae62f23dd08acad13aba2e95287beb20b6bec2f4af0423557fe37401",
+    "source": "user-provided; https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+  },
+  {
+    "file": "raw/web/issue-2-teacher-comments.md",
+    "sha256": "985368aabeb0668812832ad9cf25e3a4b009dc8a8fa066d3c8ac43654ef7b569",
+    "source": "https://github.com/aslan9/pku_quantllm/issues/2",
+    "redacted": true
+  }
+]

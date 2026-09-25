@@ -1,0 +1,49 @@
+{
+  "study": "new MA + OHLCV exploration authorized 2026-09-24",
+  "round": 1,
+  "candidate_count": 10,
+  "candidate_formulas": {
+    "ribbon_weakest_gap": "positive minimum of MA5/20, MA20/60, MA60/120 gaps",
+    "ribbon_joint_widening": "all four MAs aligned and all three gaps widen over five stock bars",
+    "ribbon_compress_expand": "four MAs aligned; ribbon narrowed then widened",
+    "trend_close_breakout20": "MA20>MA60>MA120; close above previous 20-bar high",
+    "ribbon_range_high": "four MAs aligned; close near top of current 20-bar high-low range",
+    "trend_intraday_reclaim20": "MA20>MA60>MA120; low below and close above MA20",
+    "trend_peak_pullback_strong_close": "long trend, 2-8% below previous 20-bar high, strong close location",
+    "ribbon_atr_contraction": "four MAs aligned; ATR5 below ATR20",
+    "ribbon_atr_expansion_green": "four MAs aligned; ATR5 above ATR20 and close above open",
+    "trend_intraday_reclaim5": "long trend; open below and close above MA5"
+  },
+  "clue": "multi-scale MA structure plus same-day price action predicts own five-day rise",
+  "signal": "t close, every sixth market date since 2008-01-02, exact CSI300 membership on t",
+  "target": "t+1 open to t+6 open; no entry=zero intent return; no exit=latest close mark and stress return",
+  "selection": "highest 20 strictly positive scores per signal date, deterministic ordinal rank",
+  "eligible": "same t-day filters and future non-fill treatment as locked unified-source study",
+  "periods": {
+    "train_2008_2016": [
+      "2008-01-02",
+      "2016-12-31"
+    ],
+    "valid_2017_2022": [
+      "2017-01-01",
+      "2022-12-31"
+    ],
+    "recent_2023_2026": [
+      "2023-01-01",
+      "2026-09-23"
+    ]
+  },
+  "primary": "stock's own mean five-day intent return, up rate, 0.3% cost sensitivity",
+  "auxiliary": "same-day eligible-universe return edge and rank IC; neither vetoes primary",
+  "historical_screen": "each of three eras: >=20 triggered dates, >=200 selected stocks, own mean >0.3%",
+  "ideal_rule": "requires new unseen time-period evidence with credible positive net return; unavailable now",
+  "all_current_dates_previously_viewed": true,
+  "independent_time_test_available": false,
+  "script_sha256": "4f0c26dfe930c3787a1c8fef54fafad17e26d5330a05e336d15324613a7a6c40",
+  "upstream_eligibility_sha256": "3e52106deaa9e05069d1a0a8cc0080a81bba75e812de6a1704ef82b4d22ab760",
+  "data_sha256": {
+    "bars_qfq.parquet": "e75d33059c8cf2bb0fab01ce1a6e578d49c76b9317cbdf3db8d19fbc87776129",
+    "trade_calendar.parquet": "ddf49ed07a9b55898722c87e62066209b2dcea936f7c62b9cb72ea4b518854f8",
+    "membership_signal_days.parquet": "59e49d82c4e94efbc992b627490d4b73986a622e80ac2e9e177f3e6ba10e2c68"
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "started_at": "2026-09-24T00:10:22.326588+08:00",
+  "orders_sent": 0,
+  "mode": "read_only",
+  "md_logins": 1,
+  "td_logins": 1,
+  "td_auths": 1,
+  "subscriptions": [
+    "ag2610",
+    "ag2611",
+    "ag2612",
+    "ag2701",
+    "ag2702",
+    "ag2703",
+    "au2610",
+    "au2611",
+    "au2612",
+    "au2702",
+    "au2704",
+    "au2706",
+    "cu2610",
+    "cu2611",
+    "cu2612",
+    "cu2701",
+    "cu2702",
+    "cu2703",
+    "rb2610",
+    "rb2611",
+    "rb2612",
+    "rb2701",
+    "rb2702",
+    "rb2703"
+  ],
+  "selected": [
+    "au2612",
+    "ag2610",
+    "cu2611"
+  ],
+  "ticks": {
+    "ag2610": {
+      "ticks": 89,
+      "changes": 88,
+      "volume": 118070,
+      "last_price": 15744.0,
+      "first_received": "2026-09-24T00:10:26.804449+08:00",
+      "last_received": "2026-09-24T00:11:12.018573+08:00",
+      "market_time": "00:11:11"
+    },
+    "ag2611": {
+      "ticks": 31,
+      "changes": 30,
+      "volume": 16826,
+      "last_price": 15779.0,
+      "first_received": "2026-09-24T00:10:26.804671+08:00",
+      "last_received": "2026-09-24T00:10:46.962817+08:00",
+      "market_time": "00:10:46"
+    },
+    "ag2612": {
+      "ticks": 42,
+      "changes": 41,
+      "volume": 102539,
+      "last_price": 15790.0,
+      "first_received": "2026-09-24T00:10:26.804735+08:00",
+      "last_received": "2026-09-24T00:10:47.003592+08:00",
+      "market_time": "00:10:46"
+    },
+    "ag2701": {
+      "ticks": 31,
+      "changes": 30,
+      "volume": 13811,
+      "last_price": 15815.0,
+      "first_received": "2026-09-24T00:10:26.806089+08:00",
+      "last_received": "2026-09-24T00:10:47.003733+08:00",
+      "market_time": "00:10:46"
+    },
+    "ag2702": {
+      "ticks": 42,
+      "changes": 41,
+      "volume": 104232,
+      "last_price": 15829.0,
+      "first_received": "2026-09-24T00:10:26.806160+08:00",
+      "last_received": "2026-09-24T00:10:47.003785+08:00",
+      "market_time": "00:10:46"
+    },
+    "ag2703": {
+      "ticks": 11,
+      "changes": 10,
+      "volume": 1210,
+      "last_price": 15842.0,
+      "first_received": "2026-09-24T00:10:26.832711+08:00",
+      "last_received": "2026-09-24T00:10:46.019189+08:00",
+      "market_time": "00:10:45"
+    },
+    "au2610": {
+      "ticks": 41,
+      "changes": 40,
+      "volume": 77519,
+      "last_price": 927.4200000000001,
+      "first_received": "2026-09-24T00:10:26.832774+08:00",
+      "last_received": "2026-09-24T00:10:46.962885+08:00",
+      "market_time": "00:10:46"
+    },
+    "au2611": {
+      "ticks": 41,
+      "changes": 40,
+      "volume": 1684,
+      "last_price": 929.0,
+      "first_received": "2026-09-24T00:10:26.832828+08:00",
+      "last_received": "2026-09-24T00:10:47.003825+08:00",
+      "market_time": "00:10:46"
+    },
+    "au2612": {
+      "ticks": 73,
+      "changes": 72,
+      "volume": 78904,
+      "last_price": 930.2,
+      "first_received": "2026-09-24T00:10:26.834317+08:00",
+      "last_received": "2026-09-24T00:11:10.979432+08:00",
+      "market_time": "00:11:10"
+    },
+    "au2702": {
+      "ticks": 42,
+      "changes": 41,
+      "volume": 10026,
+      "last_price": 932.54,
+      "first_received": "2026-09-24T00:10:26.834468+08:00",
+      "last_received": "2026-09-24T00:10:47.003867+08:00",
+      "market_time": "00:10:46"
+    },
+    "au2704": {
+      "ticks": 42,
+      "changes": 41,
+      "volume": 2383,
+      "last_price": 935.0,
+      "first_received": "2026-09-24T00:10:26.834570+08:00",
+      "last_received": "2026-09-24T00:10:47.003904+08:00",
+      "market_time": "00:10:46"
+    },
+    "au2706": {
+      "ticks": 35,
+      "changes": 34,
+      "volume": 343,
+      "last_price": 937.28,
+      "first_received": "2026-09-24T00:10:26.834665+08:00",
+      "last_received": "2026-09-24T00:10:46.019321+08:00",
+      "market_time": "00:10:45"
+    },
+    "cu2610": {
+      "ticks": 10,
+      "changes": 9,
+      "volume": 21710,
+      "last_price": 110780.0,
+      "first_received": "2026-09-24T00:10:26.834758+08:00",
+      "last_received": "2026-09-24T00:10:45.461754+08:00",
+      "market_time": "00:10:44"
+    },
+    "cu2611": {
+      "ticks": 24,
+      "changes": 23,
+      "volume": 28303,
+      "last_price": 110220.0,
+      "first_received": "2026-09-24T00:10:26.834870+08:00",
+      "last_received": "2026-09-24T00:11:10.504121+08:00",
+      "market_time": "00:11:09"
+    },
+    "cu2612": {
+      "ticks": 4,
+      "changes": 3,
+      "volume": 8733,
+      "last_price": 109810.0,
+      "first_received": "2026-09-24T00:10:26.834957+08:00",
+      "last_received": "2026-09-24T00:10:44.457781+08:00",
+      "market_time": "00:10:43"
+    },
+    "cu2701": {
+      "ticks": 6,
+      "changes": 5,
+      "volume": 2554,
+      "last_price": 109550.0,
+      "first_received": "2026-09-24T00:10:26.835006+08:00",
+      "last_received": "2026-09-24T00:10:45.004196+08:00",
+      "market_time": "00:10:44"
+    },
+    "cu2702": {
+      "ticks": 5,
+      "changes": 4,
+      "volume": 1387,
+      "last_price": 109380.0,
+      "first_received": "2026-09-24T00:10:26.835057+08:00",
+      "last_received": "2026-09-24T00:10:45.461765+08:00",
+      "market_time": "00:10:44"
+    },
+    "cu2703": {
+      "ticks": 8,
+      "changes": 7,
+      "volume": 389,
+      "last_price": 109410.0,
+      "first_received": "2026-09-24T00:10:26.835106+08:00",
+      "last_received": "2026-09-24T00:10:42.013577+08:00",
+      "market_time": "00:10:41"
+    },
+    "rb2610": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 22417,
+      "last_price": 3052.0,
+      "first_received": "2026-09-24T00:10:26.835181+08:00",
+      "last_received": "2026-09-24T00:10:26.835181+08:00",
+      "market_time": "23:00:00"
+    },
+    "rb2611": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 71861,
+      "last_price": 3098.0,
+      "first_received": "2026-09-24T00:10:26.835250+08:00",
+      "last_received": "2026-09-24T00:10:26.835250+08:00",
+      "market_time": "23:00:00"
+    },
+    "rb2612": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 196,
+      "last_price": 3106.0,
+      "first_received": "2026-09-24T00:10:26.835300+08:00",
+      "last_received": "2026-09-24T00:10:26.835300+08:00",
+      "market_time": "23:00:00"
+    },
+    "rb2701": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 185762,
+      "last_price": 3111.0,
+      "first_received": "2026-09-24T00:10:26.835352+08:00",
+      "last_received": "2026-09-24T00:10:26.835352+08:00",
+      "market_time": "23:00:00"
+    },
+    "rb2702": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 10,
+      "last_price": 3113.0,
+      "first_received": "2026-09-24T00:10:26.835399+08:00",
+      "last_received": "2026-09-24T00:10:26.835399+08:00",
+      "market_time": "23:00:00"
+    },
+    "rb2703": {
+      "ticks": 1,
+      "changes": 0,
+      "volume": 8411,
+      "last_price": 3119.0,
+      "first_received": "2026-09-24T00:10:26.835446+08:00",
+      "last_received": "2026-09-24T00:10:26.835446+08:00",
+      "market_time": "23:00:00"
+    }
+  },
+  "errors": [],
+  "products": [
+    "au",
+    "ag",
+    "cu",
+    "rb"
+  ],
+  "ended_at": "2026-09-24T00:11:12.023639+08:00",
+  "elapsed_seconds": 49.7,
+  "event_counts": {
+    "td_connected": 1,
+    "request": 8,
+    "md_connected": 1,
+    "md_login": 1,
+    "td_auth": 1,
+    "td_login": 1,
+    "td_settlement": 1,
+    "contract": 44,
+    "contract_query_done": 4,
+    "contracts_ready": 1,
+    "subscription": 24,
+    "tick": 583,
+    "heartbeat": 3,
+    "selection": 1,
+    "unsubscription": 21
+  },
+  "verified_streams": [
+    "au2612",
+    "ag2610",
+    "cu2611"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "study": "new unified-source exploratory replication, not a fifth round of the old locked study",
+  "clue": "Do moving-average trend, slope, persistence or pullback scores predict the stock's own five-day rise?",
+  "candidate_count": 12,
+  "candidate_formulas": {
+    "ma20_over_60": "max(MA20/MA60-1, 0): medium trend",
+    "ma60_over_120": "max(MA60/MA120-1, 0): slower trend",
+    "ma5_over_20": "max(MA5/MA20-1, 0): short trend",
+    "price_over_ma20": "max(close/MA20-1, 0): price above medium trend",
+    "ma20_slope_5": "max(MA20/MA20[5 bars ago]-1, 0): medium slope",
+    "ma60_slope_10": "max(MA60/MA60[10 bars ago]-1, 0): slow slope",
+    "ma5_20_accel_5": "max((MA5/MA20-1)-its 5-bar lag, 0): short acceleration",
+    "trend_persistence_20": "if MA20>MA60 and >50% of last 20 closes exceed MA20, score that fraction",
+    "uptrend_pullback": "if MA20>MA60 and MA20<close<MA5, score MA5/close-1",
+    "uptrend_reclaim_ma5": "if MA20>MA60 and close crosses above MA5, score long gap + close/MA5-1",
+    "bear_trend_rebound": "if MA20<MA60 and close>MA5, score -long gap + close/MA5-1",
+    "old_market_down_pullback": "old diagnostic: uptrend pullback when same-day cohort mean return <0; score long gap+pullback"
+  },
+  "signal": "t close; every 6th market trading day starting 2008-01-02; exact as-of CSI300 membership",
+  "target": "t+1 open to t+6 open; no entry fill=0; no horizon exit=latest close mark plus -100% stress",
+  "selection": "top 20 positive-score eligible stocks per day; no future-based eligibility exclusions",
+  "eligible": "t close>0, volume>0, tradestatus=1, isST=0, finite MA120 and input features",
+  "evaluations": "own average return and up-rate primary; same-day cohort edge and Rank IC auxiliary",
+  "cost_sensitivity": "0.3% illustrative round trip, not measured execution cost",
+  "periods": {
+    "2008_2012": [
+      "2008-01-02",
+      "2012-12-31"
+    ],
+    "2013_2017": [
+      "2013-01-01",
+      "2017-12-31"
+    ],
+    "2018_2022": [
+      "2018-01-01",
+      "2022-12-31"
+    ],
+    "2023_2026": [
+      "2023-01-01",
+      "2026-09-23"
+    ]
+  },
+  "consistency_rule": "all four eras each >=40 signal days and >=400 selected stocks, own mean >0.3%, cohort edge >0.15 percentage points, mean Rank IC >0.01",
+  "all_periods_previously_viewed": true,
+  "independent_test_available": false,
+  "script_sha256": "3e52106deaa9e05069d1a0a8cc0080a81bba75e812de6a1704ef82b4d22ab760",
+  "data_sha256": {
+    "bars_qfq.parquet": "e75d33059c8cf2bb0fab01ce1a6e578d49c76b9317cbdf3db8d19fbc87776129",
+    "trade_calendar.parquet": "ddf49ed07a9b55898722c87e62066209b2dcea936f7c62b9cb72ea4b518854f8",
+    "membership_signal_days.parquet": "59e49d82c4e94efbc992b627490d4b73986a622e80ac2e9e177f3e6ba10e2c68"
+  }
+}

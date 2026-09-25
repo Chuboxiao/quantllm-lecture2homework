@@ -1,0 +1,48 @@
+{
+  "study": "round two of user-authorized MA+price/volume study",
+  "clue": "synchronous widening may chase overheated prices; test price/volume/volatility conditions",
+  "candidate_count": 12,
+  "candidate_formulas": {
+    "widen_no_chase": "joint MA widening; close no more than 0.5 ATR14 above MA5",
+    "widen_upper_range": "joint MA widening; close in top 30% of recent 20-bar range",
+    "widen_breakout20": "joint MA widening; close above prior 20-bar high",
+    "widen_inside_high20": "joint MA widening; close at or below prior 20-bar high",
+    "widen_green_body": "joint MA widening weighted by positive same-day close-open body / ATR14",
+    "widen_red_body": "joint MA widening weighted by negative same-day close-open body / ATR14",
+    "widen_volume_up": "joint MA widening weighted by volume / 20-bar average above one",
+    "widen_volume_down": "joint MA widening weighted by volume / 20-bar average below one",
+    "widen_atr_up": "joint MA widening weighted by ATR5 / ATR20 above one",
+    "widen_atr_down": "joint MA widening weighted by ATR5 / ATR20 below one",
+    "widen_gap_up": "joint MA widening weighted by t-open / previous close positive gap",
+    "widen_gap_down": "joint MA widening weighted by t-open / previous close negative gap"
+  },
+  "data_and_return_rules": "identical to round one; historical CSI300 exploration only",
+  "periods": {
+    "train_2008_2016": [
+      "2008-01-02",
+      "2016-12-31"
+    ],
+    "valid_2017_2022": [
+      "2017-01-01",
+      "2022-12-31"
+    ],
+    "recent_2023_2026": [
+      "2023-01-01",
+      "2026-09-23"
+    ]
+  },
+  "primary": "own five-day mean return and up rate; 0.3% cost sensitivity",
+  "auxiliary": "same-day cohort edge and rank IC; not vetoes",
+  "historical_screen": "three eras each >=20 signal dates, >=200 positions, own mean >0.3%",
+  "csi500_used_for_round_two_selection": false,
+  "all_dates_previously_viewed": true,
+  "script_sha256": "b946c1a9dc3f73121f49d81dfb917bd2c9ccaa30932469e77b932c385ae169cf",
+  "round_one_code_sha256": "4f0c26dfe930c3787a1c8fef54fafad17e26d5330a05e336d15324613a7a6c40",
+  "round_one_result_sha256": "9903359cdf53616e044038f3296b9ecc9c604059e3bf5c4e3b0bdcfece68c134",
+  "failed_transfer_result_sha256": "652787e67b9389323664db50124b0e5164c74d8cc60d69cc471fdfd23a53e64b",
+  "data_sha256": {
+    "bars_qfq.parquet": "e75d33059c8cf2bb0fab01ce1a6e578d49c76b9317cbdf3db8d19fbc87776129",
+    "trade_calendar.parquet": "ddf49ed07a9b55898722c87e62066209b2dcea936f7c62b9cb72ea4b518854f8",
+    "membership_signal_days.parquet": "59e49d82c4e94efbc992b627490d4b73986a622e80ac2e9e177f3e6ba10e2c68"
+  }
+}

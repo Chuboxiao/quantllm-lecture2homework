@@ -1,0 +1,133 @@
+{
+  "posthoc_robustness_audit": true,
+  "factor": "market_down_day",
+  "scope": "2024-2026 already-viewed dates; 2023-12-29 fixed CSI300 cohort",
+  "signal": "every market day at t close, same old factor and eligibility",
+  "target": "t+1 open to t+6 open; overlapping horizons",
+  "bootstrap": {
+    "type": "circular moving-block calendar-day bootstrap",
+    "block_lengths": [
+      10,
+      20
+    ],
+    "replicates": 4000,
+    "seed": 20260924,
+    "estimand": "equal-weight mean over triggered days"
+  },
+  "source_sha256": "46d6357da64275ed6285750158bd4be5857c85ce902038cae3a0486e2aa6cdc6",
+  "prior_code_sha256": "900c7879c03611f11b274013ffad7b0571bf0e9a81b4765a33ffe7173b817d2f",
+  "all_eligible_metadata": {
+    "source": "fresh",
+    "potential_signal_rows": 195881,
+    "eligible_t_day_rows": 195787,
+    "sample_dates": 656,
+    "factors": 12,
+    "future_volume_or_extreme_move_exclusion": false,
+    "entry_no_fill_count_all_eligible": 33,
+    "unclosed_count_all_eligible": 151
+  },
+  "periods": {
+    "2024": {
+      "market_dates": 236,
+      "signal_days": 121,
+      "selected_stocks": 1997,
+      "signal_mean": 0.0063696401523649845,
+      "edge": 0.0029969945844956253,
+      "median_signal_day_mean": -0.001107389072146342,
+      "signal_up_rate_mean": 0.48899612670305803,
+      "selected_no_entry": 1,
+      "selected_unclosed": 2,
+      "after_0p3pct_cost_sensitivity": 0.0033696401523649845,
+      "block_bootstrap": {
+        "10": {
+          "signal_mean_95pct": [
+            -0.0022821383826815067,
+            0.016367933889593324
+          ],
+          "edge_95pct": [
+            -0.002681017843559732,
+            0.008660142444451367
+          ]
+        },
+        "20": {
+          "signal_mean_95pct": [
+            -0.003135859400503408,
+            0.018025982002713804
+          ],
+          "edge_95pct": [
+            -0.003335944216563734,
+            0.00932813217461972
+          ]
+        }
+      }
+    },
+    "2025": {
+      "market_dates": 237,
+      "signal_days": 112,
+      "selected_stocks": 1974,
+      "signal_mean": 0.007315675195124109,
+      "edge": 0.001919145329283086,
+      "median_signal_day_mean": 0.006762309145037523,
+      "signal_up_rate_mean": 0.5015250989826675,
+      "selected_no_entry": 0,
+      "selected_unclosed": 1,
+      "after_0p3pct_cost_sensitivity": 0.004315675195124109,
+      "block_bootstrap": {
+        "10": {
+          "signal_mean_95pct": [
+            -0.0013821337756450393,
+            0.01578088676116673
+          ],
+          "edge_95pct": [
+            -0.0032073647799847837,
+            0.007319232437500944
+          ]
+        },
+        "20": {
+          "signal_mean_95pct": [
+            -0.002208644449013524,
+            0.016090413420703296
+          ],
+          "edge_95pct": [
+            -0.0027688588467344386,
+            0.007104726144462016
+          ]
+        }
+      }
+    },
+    "2026": {
+      "market_dates": 171,
+      "signal_days": 88,
+      "selected_stocks": 1458,
+      "signal_mean": 0.0017892657490502935,
+      "edge": 0.0032694885590257962,
+      "median_signal_day_mean": 9.238917464989005e-05,
+      "signal_up_rate_mean": 0.42557134172274547,
+      "selected_no_entry": 0,
+      "selected_unclosed": 0,
+      "after_0p3pct_cost_sensitivity": -0.0012107342509497065,
+      "block_bootstrap": {
+        "10": {
+          "signal_mean_95pct": [
+            -0.006820148552463652,
+            0.01141864861773498
+          ],
+          "edge_95pct": [
+            -0.005552607446757052,
+            0.012295369001674697
+          ]
+        },
+        "20": {
+          "signal_mean_95pct": [
+            -0.00564020249618579,
+            0.010234811008816715
+          ],
+          "edge_95pct": [
+            -0.005266626852107709,
+            0.01115027289997826
+          ]
+        }
+      }
+    }
+  }
+}

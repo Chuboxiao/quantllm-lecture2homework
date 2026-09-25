@@ -1,0 +1,67 @@
+{
+  "selected": "recovering_above_ma20",
+  "round": 3,
+  "selection": "highest validation edge among qualifiers; fallback to train-positive edge if none qualifies",
+  "fallback_diagnostic_only": true,
+  "train": {
+    "days": 152,
+    "signals": 8473,
+    "stocks_per_day": 284.57894736842104,
+    "signal_mean": 0.008024772816310815,
+    "baseline_mean": 0.0031543984403035828,
+    "edge": 0.004870374376007233,
+    "edge_sd": 0.01445664107905026,
+    "edge_positive_day_fraction": 0.5789473684210527,
+    "signal_up_rate": 0.5067489695655304,
+    "baseline_up_rate": 0.48200092722440696,
+    "rank_ic": 0.03992023082288156,
+    "after_0p3pct_cost_sensitivity": 0.005024772816310815
+  },
+  "valid": {
+    "days": 81,
+    "signals": 3540,
+    "stocks_per_day": 292.3333333333333,
+    "signal_mean": 0.006907598169892215,
+    "baseline_mean": 0.0037653511033919657,
+    "edge": 0.0031422470665002484,
+    "edge_sd": 0.016478274369732267,
+    "edge_positive_day_fraction": 0.5925925925925926,
+    "signal_up_rate": 0.5007489507811275,
+    "baseline_up_rate": 0.5024892902709083,
+    "rank_ic": 0.009300984034366518,
+    "after_0p3pct_cost_sensitivity": 0.003907598169892215
+  },
+  "holdout": {
+    "days": 43,
+    "signals": 1718,
+    "stocks_per_day": 298.6046511627907,
+    "signal_mean": 0.005732761002204187,
+    "baseline_mean": 0.0017347378861230546,
+    "edge": 0.0039980231160811315,
+    "edge_sd": 0.017643061162590075,
+    "edge_positive_day_fraction": 0.5348837209302325,
+    "signal_up_rate": 0.48845746009256197,
+    "baseline_up_rate": 0.45493096695896945,
+    "rank_ic": 0.027857244081324655,
+    "after_0p3pct_cost_sensitivity": 0.0027327610022041867
+  },
+  "holdout_period": [
+    "2024-01-01",
+    "2025-12-31"
+  ],
+  "fresh_parquet_sha256": "6da76d1f665cc62e2f357eada4fd510023d9816e6af4ab3d7df45d693fb5ca6b",
+  "teacher_hashes": {
+    "filters.pkl": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24",
+    "base_dataset.pkl": "4248f100c5d2e5f0bbcaa6b2b1790b5f0fddeb815e65aff0cc4388eb52701465"
+  },
+  "data": {
+    "source": "fresh",
+    "potential_signal_rows": 24209,
+    "eligible_rows": 24185,
+    "sample_dates": 81,
+    "factors": 12,
+    "historical_membership": false,
+    "frozen_cohort": true
+  },
+  "holdout_viewed_once": true
+}

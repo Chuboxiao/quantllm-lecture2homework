@@ -1,0 +1,29 @@
+{
+  "status": "candidate locked for a genuinely new future-time check; not yet validated",
+  "selected_after_rounds": 4,
+  "selected_factor": "close_lower_half",
+  "selection_basis": "among four exploratory rounds, relatively consistent own mean and up rate; historical selection bias acknowledged",
+  "formula": "ribbon_joint_widening * max(open / previous adjusted close - 1, 0) if high > low and (close-low)/(high-low) < 0.5; otherwise zero",
+  "signal_time": "t close",
+  "eligible_universe": "exact historical CSI300 members on t; only t-day quality and tradability filters",
+  "signal_schedule": "every sixth market trading date from 2008-01-02 anchor; same schedule as exploratory study",
+  "selection": "up to 20 stocks with strictly positive score per signal day; deterministic ordinal descending rank",
+  "target": "t+1 open to t+6 open intent return; no-entry signals retained as zero; no exit separately counted and stress marked",
+  "future_test_period": [
+    "2026-10-01",
+    "2028-09-30"
+  ],
+  "future_test_read_status": "unseen; most data do not yet exist as of 2026-09-24",
+  "cost_sensitivity_round_trip": 0.003,
+  "minimum_evidence": "at least 40 triggered signal days and 200 selected stock positions; own mean minus 0.3% > 0; four-signal-day circular moving-block 95% interval of own mean minus 0.3% entirely > 0; mean up rate > 50%; same-day cohort edge > 0; report missing fills and annual breakdown",
+  "interpretation": "one future-time test; failure ends this candidate, no formula change or fifth round in this study",
+  "not_trading_profit": "front-adjusted bars and assumed cost do not validate open fill or limit-price execution",
+  "source_sha256": {
+    "round4_code": "63f98599c73b846ae47b5fee6076e7190d6f0f0b185da53a0324b0189a62f1a2",
+    "round3_code": "cbebfaf55c95d396b58bb1cd1802ab3ec7ec9fd5f248cae094ff665c72278b15",
+    "round1_code": "4f0c26dfe930c3787a1c8fef54fafad17e26d5330a05e336d15324613a7a6c40",
+    "round4_plan": "606df95f95d648355ea8aa4a21d0e19463861b8d543bd6ed3512252044370492",
+    "round4_results": "066c77c0165b3b4754915e002f0a892ff29f20b07951779f1577368236dd1ced",
+    "round4_diagnostic": "44809b1ca05b5cc7e916f666ea617c0b014343e04cf8b15914715f2a5989e683"
+  }
+}

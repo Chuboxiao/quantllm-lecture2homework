@@ -1,0 +1,463 @@
+{
+  "audited_at": "2026-09-24T11:19:20",
+  "polars_version": "1.44.2",
+  "source_directory": "pku_demo/projects/alpha_mining_demo/runs/cache",
+  "files": {
+    "base_dataset.pkl": {
+      "bytes": 234857524,
+      "sha256": "4248f100c5d2e5f0bbcaa6b2b1790b5f0fddeb815e65aff0cc4388eb52701465"
+    },
+    "filters.pkl": {
+      "bytes": 22724,
+      "sha256": "e6d1c3c291cad7c7a23aee464fc15b27231d9939b43c4a2d680ab50e69a2cc24"
+    }
+  },
+  "shape": [
+    2668723,
+    10
+  ],
+  "schema": {
+    "datetime": "Datetime(time_unit='us', time_zone=None)",
+    "open": "Float64",
+    "high": "Float64",
+    "low": "Float64",
+    "close": "Float64",
+    "volume": "Float64",
+    "turnover": "Float64",
+    "open_interest": "Float64",
+    "vwap": "Float64",
+    "vt_symbol": "String"
+  },
+  "start": "2007-09-24",
+  "end": "2024-01-10",
+  "symbols": 819,
+  "membership": {
+    "symbols": 819,
+    "intervals": 995,
+    "start": "2008-01-02",
+    "end": "2023-12-29",
+    "members_without_bars": [],
+    "bars_without_membership": [],
+    "active_rows": 1167293,
+    "active_duplicate_symbol_date_rows": 0,
+    "member_count_distribution": {
+      "300": 3888,
+      "298": 3
+    },
+    "dates_not_300_members": [
+      {
+        "date": "2009-12-29",
+        "members": 298,
+        "with_bars": 298,
+        "missing_bars": 0
+      },
+      {
+        "date": "2009-12-30",
+        "members": 298,
+        "with_bars": 298,
+        "missing_bars": 0
+      },
+      {
+        "date": "2009-12-31",
+        "members": 298,
+        "with_bars": 298,
+        "missing_bars": 0
+      }
+    ],
+    "missing_bars": [
+      {
+        "date": "2015-05-20",
+        "vt_symbol": "601299.SSE"
+      }
+    ],
+    "dates_with_missing_bars": 1,
+    "missing_member_day_bars": 1,
+    "largest_missing_dates": [
+      {
+        "date": "2015-05-20",
+        "members": 300,
+        "with_bars": 299,
+        "missing_bars": 1
+      },
+      {
+        "date": "2008-01-02",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-03",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-04",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-07",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-08",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-09",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-10",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-11",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      },
+      {
+        "date": "2008-01-14",
+        "members": 300,
+        "with_bars": 300,
+        "missing_bars": 0
+      }
+    ]
+  },
+  "checks": {
+    "first_close_equals_one_symbols": 819,
+    "duplicate_symbol_datetime_rows": 0,
+    "duplicate_symbol_date_rows": 0,
+    "nulls": {
+      "datetime": 0,
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0,
+      "volume": 0,
+      "turnover": 0,
+      "open_interest": 0,
+      "vwap": 0,
+      "vt_symbol": 0,
+      "_date": 0
+    },
+    "nonfinite": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0,
+      "volume": 0,
+      "turnover": 0,
+      "open_interest": 0,
+      "vwap": 90890
+    },
+    "nonpositive_prices": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "ohlc_inconsistent_rows": 0,
+    "zero_volume_rows": 90890,
+    "zero_volume_active_rows": 29091,
+    "negative_volume_rows": 0,
+    "negative_turnover_rows": 0,
+    "weekend_rows": 0,
+    "vwap_outside_low_high_rows": 2574887,
+    "vwap_outside_check_denominator": 2577833
+  },
+  "yearly_bars": [
+    {
+      "year": 2007,
+      "rows": 31611,
+      "symbols": 495
+    },
+    {
+      "year": 2008,
+      "rows": 123514,
+      "symbols": 509
+    },
+    {
+      "year": 2009,
+      "rows": 125160,
+      "symbols": 532
+    },
+    {
+      "year": 2010,
+      "rows": 136510,
+      "symbols": 597
+    },
+    {
+      "year": 2011,
+      "rows": 150200,
+      "symbols": 633
+    },
+    {
+      "year": 2012,
+      "rows": 156143,
+      "symbols": 648
+    },
+    {
+      "year": 2013,
+      "rows": 153995,
+      "symbols": 649
+    },
+    {
+      "year": 2014,
+      "rows": 160102,
+      "symbols": 660
+    },
+    {
+      "year": 2015,
+      "rows": 163793,
+      "symbols": 682
+    },
+    {
+      "year": 2016,
+      "rows": 166908,
+      "symbols": 698
+    },
+    {
+      "year": 2017,
+      "rows": 173488,
+      "symbols": 723
+    },
+    {
+      "year": 2018,
+      "rows": 177593,
+      "symbols": 741
+    },
+    {
+      "year": 2019,
+      "rows": 183629,
+      "symbols": 764
+    },
+    {
+      "year": 2020,
+      "rows": 187855,
+      "symbols": 784
+    },
+    {
+      "year": 2021,
+      "rows": 190250,
+      "symbols": 791
+    },
+    {
+      "year": 2022,
+      "rows": 191140,
+      "symbols": 793
+    },
+    {
+      "year": 2023,
+      "rows": 191316,
+      "symbols": 793
+    },
+    {
+      "year": 2024,
+      "rows": 5516,
+      "symbols": 788
+    }
+  ],
+  "shortest_series": [
+    {
+      "vt_symbol": "600786.SSE",
+      "rows": 114,
+      "start": "2007-09-24",
+      "end": "2008-03-17"
+    },
+    {
+      "vt_symbol": "601059.SSE",
+      "rows": 233,
+      "start": "2023-02-01",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "688271.SSE",
+      "rows": 338,
+      "start": "2022-08-22",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "688041.SSE",
+      "rows": 344,
+      "start": "2022-08-12",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "301269.SZSE",
+      "rows": 354,
+      "start": "2022-07-29",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "600938.SSE",
+      "rows": 421,
+      "start": "2022-04-21",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "688223.SSE",
+      "rows": 475,
+      "start": "2022-01-26",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "001289.SZSE",
+      "rows": 477,
+      "start": "2022-01-24",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "600941.SSE",
+      "rows": 490,
+      "start": "2022-01-05",
+      "end": "2024-01-10"
+    },
+    {
+      "vt_symbol": "600001.SSE",
+      "rows": 552,
+      "start": "2007-09-24",
+      "end": "2009-12-28"
+    }
+  ],
+  "largest_close_changes": [
+    {
+      "datetime": "2009-06-05 00:00:00",
+      "vt_symbol": "000631.SZSE",
+      "open": 14.396020539152762,
+      "high": 31.317073170731707,
+      "low": 14.396020539152762,
+      "close": 21.677792041078305,
+      "volume": 36988548.1219,
+      "_return": 20.677792041078305
+    },
+    {
+      "datetime": "2012-10-19 00:00:00",
+      "vt_symbol": "000156.SZSE",
+      "open": 14.790861987753178,
+      "high": 17.77359083058565,
+      "low": 14.790861987753178,
+      "close": 17.77359083058565,
+      "volume": 40336090.7426,
+      "_return": 16.77359083058565
+    },
+    {
+      "datetime": "2010-02-12 00:00:00",
+      "vt_symbol": "000776.SZSE",
+      "open": 5.1184723742178075,
+      "high": 5.1184723742178075,
+      "low": 4.644526755899768,
+      "close": 4.744058141818897,
+      "volume": 101605381.8023,
+      "_return": 3.744058141818897
+    },
+    {
+      "datetime": "2007-12-27 00:00:00",
+      "vt_symbol": "000783.SZSE",
+      "open": 3.9709366222982045,
+      "high": 4.8013188423494935,
+      "low": 3.9709366222982045,
+      "close": 4.593153417185656,
+      "volume": 320712729.3074,
+      "_return": 3.593153417185656
+    },
+    {
+      "datetime": "2007-10-30 00:00:00",
+      "vt_symbol": "000728.SZSE",
+      "open": 4.49104174761473,
+      "high": 4.49104174761473,
+      "low": 4.042848508397013,
+      "close": 4.2692008807149335,
+      "volume": 51877574.1146,
+      "_return": 3.2692008807149335
+    },
+    {
+      "datetime": "2021-08-10 00:00:00",
+      "vt_symbol": "000792.SZSE",
+      "open": 1.2254373549050301,
+      "high": 1.3716649638024176,
+      "low": 1.0126574368299852,
+      "close": 1.1217032391914987,
+      "volume": 785246069.0,
+      "_return": 3.0610859728506785
+    },
+    {
+      "datetime": "2011-08-09 00:00:00",
+      "vt_symbol": "000750.SZSE",
+      "open": 5.0926435516419,
+      "high": 5.0926435516419,
+      "low": 4.468170977802238,
+      "close": 4.562465602641717,
+      "volume": 249460407.411,
+      "_return": 2.5753306497987354
+    },
+    {
+      "datetime": "2008-07-08 00:00:00",
+      "vt_symbol": "600703.SSE",
+      "open": 2.800743889479277,
+      "high": 3.338735387885228,
+      "low": 2.800743889479277,
+      "close": 3.075185972369819,
+      "volume": 464778329.9798,
+      "_return": 2.075185972369819
+    },
+    {
+      "datetime": "2010-09-20 00:00:00",
+      "vt_symbol": "600372.SSE",
+      "open": 2.4775226511108355,
+      "high": 2.874146704728807,
+      "low": 2.2415787513963013,
+      "close": 2.519101402507136,
+      "volume": 160525153.1618,
+      "_return": 1.6882649006622517
+    },
+    {
+      "datetime": "2009-04-09 00:00:00",
+      "vt_symbol": "000536.SZSE",
+      "open": 3.1026038437693737,
+      "high": 5.372845629262244,
+      "low": 2.9597024178549285,
+      "close": 4.670985740855548,
+      "volume": 100769921.2326,
+      "_return": 1.6051312195290617
+    },
+    {
+      "datetime": "2018-09-27 00:00:00",
+      "vt_symbol": "600733.SSE",
+      "open": 1.5776163572773743,
+      "high": 1.5776163572773743,
+      "low": 1.022329835889158,
+      "close": 1.022329835889158,
+      "volume": 21787800.0,
+      "_return": 1.5249169435215948
+    },
+    {
+      "datetime": "2014-08-06 00:00:00",
+      "vt_symbol": "000751.SZSE",
+      "open": 0.3194109514163532,
+      "high": 0.39379360792257484,
+      "low": 0.29833043953570626,
+      "close": 0.38424809491656214,
+      "volume": 285256875.7533,
+      "_return": 1.4896875
+    }
+  ],
+  "absolute_close_change_above_25pct_count": 24,
+  "limits": [
+    "Prices adjustment, data vendor/version and membership accuracy not independently verified.",
+    "Bundled AlphaLab.load_bar_df divides OHLC by each stock first close; VWAP is not divided. Different units, not an OHLC error.",
+    "Missing bars may reflect suspensions or source gaps; no exchange calendar/suspension table supplied.",
+    "Data-only inspection; no factor selection or test-period performance examined."
+  ]
+}

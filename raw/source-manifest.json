@@ -1,0 +1,465 @@
+{
+  "retrieved_at": "2026-09-23T11:46:08.639477+00:00",
+  "repositories": [
+    {
+      "name": "vnpy",
+      "remote": "https://github.com/vnpy/vnpy.git",
+      "commit": "fa5206fe63836f3f8cd1ebd7168fbd19a5e2ff09",
+      "local_path": "raw/repos/vnpy",
+      "checkout": "shallow + sparse root files and full vnpy/ package",
+      "read_scope": "Core paths documented in wiki/code/reading-map.md; not an exhaustive audit",
+      "read_files": [
+        {
+          "path": "pyproject.toml",
+          "sha256": "961e374dc212931955698aa33db7e6f1478b5896ebea2c02a521fb41d05f0413"
+        },
+        {
+          "path": "vnpy/event/engine.py",
+          "sha256": "079c76f3c99ed4dc1e28dd0ba9a30991f41bfd613c9ab30b1fa0ea6f1da6b76b"
+        },
+        {
+          "path": "vnpy/trader/constant.py",
+          "sha256": "1361eb485eda9fd97bee3e68324d9b08a96fe927c37a99f8b74de981141e7a0f"
+        },
+        {
+          "path": "vnpy/trader/converter.py",
+          "sha256": "781945b204d7d2c7463ea08c990ec8f9cdba46b5ec924fa7d11b5e2f428c14d9"
+        },
+        {
+          "path": "vnpy/trader/engine.py",
+          "sha256": "7d5b9b79e9bba689e0677a3dbeff67e6554f60e81d2b83e3bf906a18dca81fe4"
+        },
+        {
+          "path": "vnpy/trader/event.py",
+          "sha256": "44e1b191103d8973e8b4973369d48c4a62cabcbb8b11a4a7f26dd2c73809dc2f"
+        },
+        {
+          "path": "vnpy/trader/gateway.py",
+          "sha256": "a0b21be7d4661b47fac96a5d04fc827833c54b9b735b86331ca56e7e6d983cf7"
+        },
+        {
+          "path": "vnpy/trader/object.py",
+          "sha256": "bd360fc224ce22a3f7521bef67ea61125d43c410fa880b9667030ee254546a69"
+        },
+        {
+          "path": "vnpy/trader/utility.py",
+          "sha256": "1eb6b82a90663581eab092b3b371cec63e539c33db4ca67b02f905d837480f7b"
+        }
+      ]
+    },
+    {
+      "name": "vnpy_ctp",
+      "remote": "https://github.com/vnpy/vnpy_ctp.git",
+      "commit": "ad76250cf87cf5b03604336fde8c7489bdc0d0d7",
+      "local_path": "raw/repos/vnpy_ctp",
+      "checkout": "shallow, full working tree",
+      "read_scope": "Core paths documented in wiki/code/reading-map.md; not an exhaustive audit",
+      "read_files": [
+        {
+          "path": "README.md",
+          "sha256": "3db185bf07b129f698b5d9c129538e92512e65314f8b3e56517282e6024ac04a"
+        },
+        {
+          "path": "meson.build",
+          "sha256": "7f9b0e4d9e83e90fafc25d5530c329bb1c8730c8858f81e44c00163166e8fd3d"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "d976f602cda5ebba4d923a4b52e1208c40d69c2638f69457d7c031c22a4088ac"
+        },
+        {
+          "path": "vnpy_ctp/api/__init__.py",
+          "sha256": "6e0b42358bd54c39c531d54a14815fe1d3bd173e69bb82c0c452d1b4fe5d0824"
+        },
+        {
+          "path": "vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.cpp",
+          "sha256": "a4fc22fa98d7b1d6cf5cc22ff89ee79957ea235644ee4643398dbc5d7d057bfc"
+        },
+        {
+          "path": "vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.h",
+          "sha256": "2b0f4a6418aeeba58a8279b116a1d05601e10f924e0a92507170dbcb446b72ec"
+        },
+        {
+          "path": "vnpy_ctp/api/vnctp/vnctptd/vnctptd.cpp",
+          "sha256": "2350783385f920e1f570e7550ae1c252268307a1ed4b48b0e02baa51d3f073e2"
+        },
+        {
+          "path": "vnpy_ctp/gateway/ctp_gateway.py",
+          "sha256": "653f4b96fe1b27d2b4ff1002f84d3656a999e2a9bdb3b41f4bfd4fede5cea30f"
+        }
+      ]
+    },
+    {
+      "name": "vnpy_ctastrategy",
+      "remote": "https://github.com/vnpy/vnpy_ctastrategy.git",
+      "commit": "6ef76981624bf55b2ea978f8587f74d633aafc72",
+      "local_path": "raw/repos/vnpy_ctastrategy",
+      "checkout": "shallow, full working tree",
+      "read_scope": "Core paths documented in wiki/code/reading-map.md; not an exhaustive audit",
+      "read_files": [
+        {
+          "path": "README.md",
+          "sha256": "1a3e55be219beed347130edf9b0231b97de64a70bd26fc303e3127f2e4f2321f"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "604a87ef110c50e80b89e8a8fc902897f6348367a20d514bc9622e1fce706e91"
+        },
+        {
+          "path": "vnpy_ctastrategy/__init__.py",
+          "sha256": "0c10cb9b77245b23395a113ceaf7ee350277302a12d657a14f8ce825366354a8"
+        },
+        {
+          "path": "vnpy_ctastrategy/backtesting.py",
+          "sha256": "d558dd331ffedb7ff0b27f48eb56ea3ff99f9e9fa4380b28ff5b4fdc84570329"
+        },
+        {
+          "path": "vnpy_ctastrategy/engine.py",
+          "sha256": "2be43d1315da2bdd4dbe64fc256fd81522af6520cbbf021bc281727801311243"
+        },
+        {
+          "path": "vnpy_ctastrategy/strategies/double_ma_strategy.py",
+          "sha256": "77ddaa51905ecf00fc132cc8844ddc9936a848d3352d6fd2c450892ecb0abce8"
+        },
+        {
+          "path": "vnpy_ctastrategy/template.py",
+          "sha256": "fd906e9487ffbe1a57ff11c66043fbd930f3c1712ebd3c73baea9a5745106df9"
+        }
+      ]
+    },
+    {
+      "name": "vnpy_portfoliostrategy",
+      "remote": "https://github.com/vnpy/vnpy_portfoliostrategy.git",
+      "commit": "164d94f35e75c1b3c5c9a62f0b94de78e3e9662c",
+      "local_path": "raw/repos/vnpy_portfoliostrategy",
+      "checkout": "shallow, full working tree",
+      "read_scope": "Engine, template, and leg execution paths used in wiki/concepts/architecture.md",
+      "read_files": [
+        {
+          "path": "vnpy_portfoliostrategy/engine.py",
+          "sha256": "dfd18247354a34b37b2cb67ba91650fb9848c0ceaf1325ecb6e20da78f0d2d00"
+        },
+        {
+          "path": "vnpy_portfoliostrategy/template.py",
+          "sha256": "23eb0d860ee269b6cd6d21c24c71dc3b85cab8b00c40aa2709686feeb99b1468"
+        }
+      ]
+    },
+    {
+      "name": "vnpy_spreadtrading",
+      "remote": "https://github.com/vnpy/vnpy_spreadtrading.git",
+      "commit": "5919a8ac06dce5a27ad485aaeef364e451e67dce",
+      "local_path": "raw/repos/vnpy_spreadtrading",
+      "checkout": "shallow, full working tree",
+      "read_scope": "Engine, template, and leg execution paths used in wiki/concepts/architecture.md",
+      "read_files": [
+        {
+          "path": "vnpy_spreadtrading/engine.py",
+          "sha256": "c872f4929f75f2d7526557f169acf9c537d5b417bf0c15e854e18038e5362765"
+        },
+        {
+          "path": "vnpy_spreadtrading/base.py",
+          "sha256": "ed1d326ee818097d1af7fbdaa7ba0702a6b09d12460ed1a08c51b1bbc1747a78"
+        },
+        {
+          "path": "vnpy_spreadtrading/algo.py",
+          "sha256": "1c06907955e615382ca0917dac2a92a293b380ebcf9d1dd945e476e9b9499017"
+        },
+        {
+          "path": "vnpy_spreadtrading/template.py",
+          "sha256": "bf967d2df5678bf270b18b7c5e640c6c21c8f0496d34fc3540737e30339d06ad"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "repo": "vnpy",
+      "path": "vnpy/event/engine.py",
+      "symbol": "EventEngine",
+      "line": 33
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/engine.py",
+      "symbol": "MainEngine",
+      "line": 81
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/engine.py",
+      "symbol": "OmsEngine",
+      "line": 360
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/gateway.py",
+      "symbol": "BaseGateway",
+      "line": 33
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/object.py",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/converter.py",
+      "symbol": "PositionHolding",
+      "line": 17
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/utility.py",
+      "symbol": "BarGenerator.update_tick",
+      "line": 204
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/api/__init__.py",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpGateway",
+      "line": 135
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpMdApi",
+      "line": 248
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi",
+      "line": 419
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpMdApi.onRtnDepthMarketData",
+      "line": 302
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/api/vnctp/vnctpmd/vnctpmd.cpp",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onFrontConnected",
+      "line": 452
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.send_order",
+      "line": 810
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "meson.build",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "pyproject.toml",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/template.py",
+      "symbol": "CtaTemplate",
+      "line": 12
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine",
+      "line": 69
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine.process_trade_event",
+      "line": 193
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/template.py",
+      "symbol": "CtaTemplate.send_order",
+      "line": 227
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine.start_strategy",
+      "line": 708
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/strategies/double_ma_strategy.py",
+      "symbol": "DoubleMaStrategy",
+      "line": 15
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/backtesting.py",
+      "symbol": "BacktestingEngine.new_bar",
+      "line": 649
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/backtesting.py",
+      "symbol": "BacktestingEngine.cross_limit_order",
+      "line": 671
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/gateway.py",
+      "symbol": "BaseGateway.on_tick",
+      "line": 93
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/engine.py",
+      "symbol": "MainEngine.send_order",
+      "line": 254
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine.process_tick_event",
+      "line": 147
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/event/engine.py",
+      "symbol": "EventEngine._process",
+      "line": 66
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpMdApi.onFrontConnected",
+      "line": 270
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpMdApi.onRspUserLogin",
+      "line": 280
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpMdApi.subscribe",
+      "line": 403
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onRspUserLogin",
+      "line": 479
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onRspSettlementInfoConfirm",
+      "line": 526
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onRspQryInstrument",
+      "line": 612
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onRtnOrder",
+      "line": 659
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "vnpy_ctp/gateway/ctp_gateway.py",
+      "symbol": "CtpTdApi.onRtnTrade",
+      "line": 721
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/object.py",
+      "symbol": "OrderData",
+      "line": 112
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/engine.py",
+      "symbol": "OmsEngine.process_trade_event",
+      "line": 416
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/converter.py",
+      "symbol": "PositionHolding.convert_order_request_shfe",
+      "line": 168
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/backtesting.py",
+      "symbol": "BacktestingEngine",
+      "line": 46
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine.send_local_stop_order",
+      "line": 393
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "vnpy_ctastrategy/engine.py",
+      "symbol": "CtaEngine.check_stop_order",
+      "line": 220
+    },
+    {
+      "repo": "vnpy",
+      "path": "pyproject.toml",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctastrategy",
+      "path": "pyproject.toml",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy_ctp",
+      "path": "README.md",
+      "symbol": null,
+      "line": 1
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/utility.py",
+      "symbol": "_get_trader_dir",
+      "line": 38
+    },
+    {
+      "repo": "vnpy",
+      "path": "vnpy/trader/engine.py",
+      "symbol": "MainEngine.__init__",
+      "line": 86
+    }
+  ]
+}

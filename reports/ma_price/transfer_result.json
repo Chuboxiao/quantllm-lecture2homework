@@ -1,0 +1,175 @@
+{
+  "factor": "ribbon_joint_widening",
+  "transfer_support_by_locked_rule": false,
+  "not_an_independent_time_test": true,
+  "lock_sha256": "9e5ee4bf2a1dc8f000167235a4e292c7b836c2997171df759271554dd0d89b4f",
+  "bars_sha256": "d370dc7d2e6ced7ba344733552112ec5a14862c0f70c79ae79e5139001962d04",
+  "evaluation_script_sha256": "e0d0e2097fb5ab521db85f10954dd9d79b17c2e037ba0a986bb8920e9b4bc6ab",
+  "metadata": {
+    "source": "fresh",
+    "potential_signal_rows": 327003,
+    "eligible_t_day_rows": 325867,
+    "sample_dates": 656,
+    "factors": 12,
+    "future_volume_or_extreme_move_exclusion": false,
+    "entry_no_fill_count_all_eligible": 48,
+    "unclosed_count_all_eligible": 187,
+    "scheduled_dates": 109,
+    "transfer_eligible_rows": 54147,
+    "transfer_signal_dates_with_eligible": 109
+  },
+  "periods": {
+    "2024": {
+      "scheduled_evaluable_dates": 39,
+      "statistics": {
+        "days": 36,
+        "signals": 392,
+        "stocks_per_day": 498.55555555555554,
+        "signal_mean": -0.0038621243628220985,
+        "signal_median_across_days": -0.017637758612052412,
+        "signal_worst_case_mean": -0.0038621243628220985,
+        "baseline_mean": 0.00032609792725478274,
+        "edge": -0.004188222290076879,
+        "edge_sd": 0.038295518285697966,
+        "edge_median_across_days": 0.0010851265072977234,
+        "signal_up_rate": 0.36070075757575754,
+        "baseline_up_rate": 0.4122178085349184,
+        "rank_ic": -0.005647661978019955,
+        "rank_ic_days": 36,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": -0.006862124362822099,
+        "edge_naive_95pct_interval": [
+          -0.016698091596738213,
+          0.008321647016584456
+        ]
+      },
+      "block4_mean_95pct": [
+        -0.020192387962203205,
+        0.012299891228174315
+      ],
+      "block4_after_0p3pct_cost_95pct": [
+        -0.023192387962203204,
+        0.009299891228174314
+      ],
+      "block4_edge_95pct": [
+        -0.019821195628454264,
+        0.009092374422307932
+      ]
+    },
+    "2025": {
+      "scheduled_evaluable_dates": 40,
+      "statistics": {
+        "days": 40,
+        "signals": 547,
+        "stocks_per_day": 496.875,
+        "signal_mean": 0.01810647928019688,
+        "signal_median_across_days": 0.0009694472365521234,
+        "signal_worst_case_mean": 0.01675565289228899,
+        "baseline_mean": 0.008028173522466018,
+        "edge": 0.010078305757730862,
+        "edge_sd": 0.06545580191508196,
+        "edge_median_across_days": 0.000560517146995813,
+        "signal_up_rate": 0.4530070970695971,
+        "baseline_up_rate": 0.536679074420021,
+        "rank_ic": -0.033059988366377115,
+        "rank_ic_days": 40,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 1,
+        "after_0p3pct_cost_sensitivity": 0.015106479280196882,
+        "edge_naive_95pct_interval": [
+          -0.010206657414467227,
+          0.030363268929928952
+        ]
+      },
+      "block4_mean_95pct": [
+        -0.002409256755042114,
+        0.041138847201229206
+      ],
+      "block4_after_0p3pct_cost_95pct": [
+        -0.005409256755042114,
+        0.0381388472012292
+      ],
+      "block4_edge_95pct": [
+        -0.008827569498846876,
+        0.031104748314654623
+      ]
+    },
+    "2026": {
+      "scheduled_evaluable_dates": 28,
+      "statistics": {
+        "days": 28,
+        "signals": 359,
+        "stocks_per_day": 494.10714285714283,
+        "signal_mean": -0.006092195307289313,
+        "signal_median_across_days": -0.012555241379902715,
+        "signal_worst_case_mean": -0.006092195307289313,
+        "baseline_mean": -0.0016742021242934807,
+        "edge": -0.004417993182995833,
+        "edge_sd": 0.045189716651255075,
+        "edge_median_across_days": -0.002791977758144118,
+        "signal_up_rate": 0.3781513155808269,
+        "baseline_up_rate": 0.4439549589565453,
+        "rank_ic": -0.029261504578015525,
+        "rank_ic_days": 28,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 0,
+        "after_0p3pct_cost_sensitivity": -0.009092195307289313,
+        "edge_naive_95pct_interval": [
+          -0.021156498473733198,
+          0.012320512107741533
+        ]
+      },
+      "block4_mean_95pct": [
+        -0.02114770797630244,
+        0.007966277893780929
+      ],
+      "block4_after_0p3pct_cost_95pct": [
+        -0.02414770797630244,
+        0.0049662778937809285
+      ],
+      "block4_edge_95pct": [
+        -0.016560903706710418,
+        0.009246652011636283
+      ]
+    },
+    "combined": {
+      "scheduled_evaluable_dates": 109,
+      "statistics": {
+        "days": 106,
+        "signals": 1338,
+        "stocks_per_day": 496.7169811320755,
+        "signal_mean": 0.004415557076258348,
+        "signal_median_across_days": -0.010571613983760997,
+        "signal_worst_case_mean": 0.003905811269500652,
+        "baseline_mean": 0.0027124498293928097,
+        "edge": 0.0017031072468655342,
+        "edge_sd": 0.051652360048725206,
+        "edge_median_across_days": -0.0001873624980780579,
+        "signal_up_rate": 0.40324290558277653,
+        "baseline_up_rate": 0.46842140346417793,
+        "rank_ic": -0.02087787633226109,
+        "rank_ic_days": 106,
+        "entry_no_fills": 0,
+        "unclosed_at_horizon": 1,
+        "after_0p3pct_cost_sensitivity": 0.0014155570762583482,
+        "edge_naive_95pct_interval": [
+          -0.008130057339386402,
+          0.01153627183311747
+        ]
+      },
+      "block4_mean_95pct": [
+        -0.006383058260359722,
+        0.016110501336782507
+      ],
+      "block4_after_0p3pct_cost_95pct": [
+        -0.009383058260359723,
+        0.013110501336782508
+      ],
+      "block4_edge_95pct": [
+        -0.0077770176256037665,
+        0.011498461850752074
+      ]
+    }
+  }
+}

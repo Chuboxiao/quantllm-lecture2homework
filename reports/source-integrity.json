@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-09-23T11:46:08.640005+00:00",
+  "repositories": {
+    "vnpy": {
+      "commit": "fa5206fe63836f3f8cd1ebd7168fbd19a5e2ff09",
+      "verified_tracked_files": 76,
+      "clean": true,
+      "scope": "vnpy/ package (root files also present)"
+    },
+    "vnpy_ctp": {
+      "commit": "ad76250cf87cf5b03604336fde8c7489bdc0d0d7",
+      "verified_tracked_files": 91,
+      "clean": true,
+      "scope": "complete tracked working tree"
+    },
+    "vnpy_ctastrategy": {
+      "commit": "6ef76981624bf55b2ea978f8587f74d633aafc72",
+      "verified_tracked_files": 35,
+      "clean": true,
+      "scope": "complete tracked working tree"
+    }
+  },
+  "api_preread_files_match_checkout": true
+}

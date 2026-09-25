@@ -1,0 +1,30 @@
+test_automatic_discovery (test_demo.Tests.test_automatic_discovery) ... ok
+test_continuous_and_clean_shutdown (test_demo.Tests.test_continuous_and_clean_shutdown) ... ok
+test_invalid_prices (test_demo.Tests.test_invalid_prices) ... ok
+test_login_failure_not_success (test_demo.Tests.test_login_failure_not_success) ... ok
+test_selection (test_demo.Tests.test_selection) ... ok
+test_subscribed_without_ticks_not_success (test_demo.Tests.test_subscribed_without_ticks_not_success) ... ok
+test_auto_close_after_sixty_seconds_and_dedup (test_trade.Execution.test_auto_close_after_sixty_seconds_and_dedup) ... ok
+test_confirmed_pending_order_cancelled_once (test_trade.Execution.test_confirmed_pending_order_cancelled_once) ... ok
+test_disconnect_permanently_disarms (test_trade.Execution.test_disconnect_permanently_disarms) ... ok
+test_inspection_never_sends (test_trade.Execution.test_inspection_never_sends) ... ok
+test_no_bid_defers_exit_without_guessing_price (test_trade.Execution.test_no_bid_defers_exit_without_guessing_price) ... ok
+test_parallel_run_excluded (test_trade.Execution.test_parallel_run_excluded) ... ok
+test_post_close_query_failure_cannot_claim_flat (test_trade.Execution.test_post_close_query_failure_cannot_claim_flat) ... ok
+test_single_open_durable_timeout_and_restart (test_trade.Execution.test_single_open_durable_timeout_and_restart) ... ok
+test_stale_account_or_invalid_tick_resets_crossing (test_trade.Execution.test_stale_account_or_invalid_tick_resets_crossing) ... ok
+test_stop_loss_closes_before_timer (test_trade.Execution.test_stop_loss_closes_before_timer) ... ok
+test_threshold_anchors_once_after_risk_checks (test_trade.Execution.test_threshold_anchors_once_after_risk_checks) ... ok
+test_two_valid_ticks_above_fixed_threshold (test_trade.Execution.test_two_valid_ticks_above_fixed_threshold) ... ok
+test_unknown_session_or_no_settlement_blocks (test_trade.Execution.test_unknown_session_or_no_settlement_blocks) ... ok
+test_capital_and_existing_exposure (test_trade.Rules.test_capital_and_existing_exposure) ... ok
+test_closed_sessions_and_weekend (test_trade.Rules.test_closed_sessions_and_weekend) ... ok
+test_crossing_start_above_and_reset (test_trade.Rules.test_crossing_start_above_and_reset) ... ok
+test_exit_can_use_bid_without_ask (test_trade.Rules.test_exit_can_use_bid_without_ask) ... ok
+test_price_limit_spread_and_tick (test_trade.Rules.test_price_limit_spread_and_tick) ... ok
+test_two_clocks_and_bad_values (test_trade.Rules.test_two_clocks_and_bad_values) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 6.541s
+
+OK
