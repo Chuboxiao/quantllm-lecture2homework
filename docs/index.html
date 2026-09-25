@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="第二讲作业验收：最小 CTP / SimNow 仿真交易与股票均线因子研究。">
+  <meta name="color-scheme" content="light">
+  <title>第二讲作业验收｜CTP Demo 与因子研究</title>
+  <style>
+    :root { --paper:#f7f7f4; --ink:#17243c; --muted:#526179; --blue:#2458c8; --teal:#087f75; --line:#ccd4df; --warm:#efba62; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+    a { color:var(--blue); text-underline-offset:.2em; }
+    a:focus-visible, button:focus-visible { outline:3px solid var(--warm); outline-offset:4px; }
+    .skip { position:absolute; left:-9999px; top:0; z-index:50; padding:.6rem 1rem; background:#fff; }
+    .skip:focus { left:1rem; }
+    .slide { min-height:100svh; padding:clamp(2.5rem,5vw,5.5rem) clamp(1.5rem,6vw,7rem) 7.5rem; display:flex; flex-direction:column; }
+    .js .slide { display:none; }
+    .js .slide.active { display:flex; }
+    .slide-inner { width:min(100%,1260px); margin:auto; }
+    .eyebrow { margin:0 0 clamp(1.2rem,3vh,2.3rem); color:var(--teal); font-size:clamp(.82rem,1.25vw,1rem); font-weight:800; letter-spacing:.13em; }
+    h1, h2, h3, p { margin-top:0; }
+    h1 { max-width:1120px; font-size:clamp(3.2rem,6.2vw,7.2rem); line-height:1.1; letter-spacing:-.06em; }
+    h2 { max-width:1150px; margin-bottom:clamp(1.5rem,3.5vh,2.8rem); font-size:clamp(2.3rem,4.6vw,4.9rem); line-height:1.16; letter-spacing:-.045em; }
+    h3 { font-size:clamp(1.35rem,2vw,2.1rem); line-height:1.28; }
+    .lead { max-width:960px; font-size:clamp(1.35rem,2.25vw,2.25rem); line-height:1.55; }
+    .body { max-width:1050px; font-size:clamp(1.14rem,1.65vw,1.7rem); line-height:1.62; }
+    .fine { max-width:1080px; color:var(--muted); font-size:clamp(.86rem,1.15vw,1.08rem); line-height:1.55; }
+    .note { margin-top:clamp(1.3rem,4vh,3rem); padding-left:1.2rem; border-left:4px solid var(--warm); color:var(--muted); font-size:clamp(1rem,1.5vw,1.42rem); line-height:1.55; }
+    .slide-footer { width:min(100%,1260px); margin:clamp(1.8rem,4vh,3rem) auto 0; padding-top:.8rem; border-top:1px solid var(--line); display:flex; gap:1rem; justify-content:space-between; align-items:baseline; color:var(--muted); font-size:clamp(.82rem,1vw,.98rem); }
+    .slide-footer a { white-space:nowrap; }
+    .mark { color:var(--blue); }
+    .teal { color:var(--teal); }
+    .warm { color:#aa5d07; }
+    .display { font-size:clamp(3.5rem,7vw,8rem); font-weight:780; line-height:1.03; letter-spacing:-.065em; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,6rem); align-items:start; }
+    .two-col > div { padding-top:1.1rem; border-top:2px solid var(--ink); }
+    .two-col p { font-size:clamp(1.13rem,1.65vw,1.7rem); line-height:1.55; }
+    .big-index { display:block; color:var(--blue); font-size:clamp(2.5rem,4vw,4.6rem); font-weight:760; line-height:1; margin-bottom:1.3rem; }
+    .steps { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(.9rem,2vw,2rem); }
+    .steps li { border-top:2px solid var(--ink); padding-top:1rem; font-size:clamp(1rem,1.45vw,1.42rem); line-height:1.48; }
+    .steps b { display:block; color:var(--blue); font-size:clamp(1.45rem,2.3vw,2.2rem); margin-bottom:.5rem; }
+    .line-list { list-style:none; padding:0; margin:0; }
+    .line-list li { display:grid; grid-template-columns: minmax(8rem,25%) 1fr; gap:1rem; border-top:1px solid var(--line); padding:clamp(.75rem,1.7vh,1.35rem) 0; font-size:clamp(1.08rem,1.6vw,1.6rem); line-height:1.45; }
+    .line-list li:first-child { border-top:2px solid var(--ink); }
+    .line-list strong { color:var(--blue); }
+    .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.2rem,3vw,3.5rem); margin:2rem 0; }
+    .metrics > div { border-top:2px solid var(--ink); padding-top:.8rem; }
+    .metrics .number { display:block; color:var(--blue); font-size:clamp(2.45rem,4.8vw,5rem); font-weight:750; letter-spacing:-.055em; line-height:1.15; }
+    .metrics .label { display:block; margin-top:.45rem; font-size:clamp(.95rem,1.35vw,1.32rem); line-height:1.4; }
+    table { border-collapse:collapse; width:100%; font-size:clamp(.95rem,1.32vw,1.28rem); line-height:1.4; }
+    th,td { padding:clamp(.55rem,1.15vh,.9rem) .7rem; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-weight:750; border-bottom:2px solid var(--ink); }
+    td.num,th.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+    tbody tr:last-child td { border-bottom:2px solid var(--ink); }
+    .verdict { font-size:clamp(2.1rem,4.1vw,4.4rem); font-weight:760; line-height:1.22; letter-spacing:-.035em; max-width:1150px; }
+    .report-links { display:grid; grid-template-columns:1fr 1fr; gap:1rem 3rem; margin-top:2rem; font-size:clamp(1.05rem,1.5vw,1.5rem); }
+    .report-links a { border-top:2px solid var(--ink); padding-top:1rem; display:block; }
+    .deck-controls { position:fixed; z-index:20; bottom:0; left:0; right:0; padding:.5rem clamp(1rem,3vw,3rem) .7rem; background:rgba(247,247,244,.96); border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; gap:1rem; color:var(--muted); font-size:.9rem; }
+    .deck-controls button { appearance:none; border:1px solid var(--line); border-radius:0; padding:.55rem .8rem; background:transparent; color:var(--ink); font:inherit; cursor:pointer; }
+    .deck-controls button:hover:not(:disabled) { background:#e6ecf6; }
+    .deck-controls button:disabled { opacity:.35; cursor:default; }
+    .control-actions { display:flex; gap:.5rem; align-items:center; }
+    .progress { position:fixed; z-index:21; bottom:0; left:0; height:4px; width:0; background:var(--blue); transition:width .22s ease; }
+    @media (max-width:750px) {
+      .slide { padding:2.4rem 1.35rem 7rem; }
+      .two-col,.metrics,.report-links { grid-template-columns:1fr; }
+      .steps { grid-template-columns:1fr 1fr; }
+      .line-list li { grid-template-columns:1fr; gap:.15rem; }
+      .table-wrap { overflow-x:auto; }
+      table { min-width:650px; }
+      .deck-controls .hint { display:none; }
+    }
+    @media (max-width:430px) { .steps { grid-template-columns:1fr; } }
+    @media print {
+      @page { size:landscape; margin:0; }
+      body { background:#fff; }
+      .js .slide,.slide { display:flex !important; min-height:100vh; height:100vh; padding:3rem 4rem; break-after:page; page-break-after:always; overflow:hidden; }
+      .deck-controls,.progress,.skip { display:none !important; }
+      a { color:var(--blue); }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .progress { transition:none; } }
+  </style>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#slide-1">跳到幻灯片</a>
+  <main id="deck" aria-label="第二讲作业验收幻灯片">
+    <section class="slide active" id="slide-1" data-title="第二讲作业验收" aria-label="第 1 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">当代量化交易系统的原理与实现 · 第二讲</p>
+        <h1>第二讲<br><span class="mark">作业验收</span></h1>
+        <p class="lead">最小 CTP / SimNow 仿真交易<br>股票均线与价格行为因子研究</p>
+        <p class="fine">2026 年 9 月 · 个人作业 · 方向键 / 空格翻页，也可点击下方按钮</p>
+      </div>
+      <div class="slide-footer"><span>Chuboxiao · QuantLLM Lecture 2</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework" target="_blank" rel="noopener noreferrer">查看作业仓库 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-2" data-title="两项作业，两种结论" aria-label="第 2 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">总览</p>
+        <h2>两项作业，<br>两种不同结论</h2>
+        <div class="two-col">
+          <div><span class="big-index">01</span><h3>最小运行 Demo 已完成</h3><p>个人 SimNow 仿真账户接收行情，完成一次价格触发开仓、60 秒自动平今和最终空仓核验。</p></div>
+          <div><span class="big-index">02</span><h3>因子研究已完成探索</h3><p>多阶段检验均线与价格行为线索；找到待复核候选，但没有通过独立时间验证的理想因子。</p></div>
+        </div>
+      </div>
+      <div class="slide-footer"><span>交易执行验证 ≠ 因子有效性验证</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/tree/main/reports" target="_blank" rel="noopener noreferrer">两份正式报告 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-3" data-title="一次仿真交易闭环" aria-label="第 3 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业一 · 实际回报</p>
+        <h2>开仓、平今、最终空仓</h2>
+        <div class="metrics">
+          <div><span class="number">932.50</span><span class="label">买入开仓价 · au2612 · 1 手</span></div>
+          <div><span class="number">932.24</span><span class="label">约 60 秒后卖出平今价</span></div>
+          <div><span class="number">0 手</span><span class="label">最终查询目标合约持仓</span></div>
+        </div>
+        <p class="body">本机 02:02:02 左右收到开仓回报，约 02:03:02 收到平今回报；两张订单均全部成交，最终无活动委托。</p>
+        <p class="note">仿真账户余额变化 <strong>−262 元</strong>，其中价差毛损益约 −260 元、柜台显示手续费 2 元。这证明一次执行闭环，不是盈利能力测试。</p>
+      </div>
+      <div class="slide-footer"><span>本机事件时间和 CTP 成交时间来自不同钟源；完整个人订单号不公开</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">第一部分报告 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-4" data-title="最小 CTP Demo 的实现" aria-label="第 4 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业一 · 实现</p>
+        <h2>从底层接口接行情、接交易</h2>
+        <ol class="steps">
+          <li><b>01</b>连接 MdApi / TdApi，完成认证与登录</li>
+          <li><b>02</b>确认结算，查询合约并订阅行情</li>
+          <li><b>03</b>有效行情连续满足固定价格阈值后发单</li>
+          <li><b>04</b>接收订单与成交回报，自动平今并复查持仓</li>
+        </ol>
+        <p class="note">行情只读运行曾收到 583 条行情；仿真交易只对上期所黄金合约 <strong>au2612</strong> 执行 1 手多头。</p>
+      </div>
+      <div class="slide-footer"><span>代码直接调用 vnpy_ctp.api.MdApi / TdApi</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/tree/main/projects/ctp_demo" target="_blank" rel="noopener noreferrer">代码与测试 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-5" data-title="价格触发前的边界" aria-label="第 5 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业一 · 规则</p>
+        <h2>行情有效，才允许触发</h2>
+        <ul class="line-list">
+          <li><strong>行情</strong><span>最新价为正、盘口和报价量有效；行情时间与回调时间均不超过 2 秒，缺卖一或倒序行情不触发。</span></li>
+          <li><strong>交易状态</strong><span>本地时段与 CTP 连续交易状态一致，结算已确认；同时检查涨跌停、保证金、费用和可用资金。</span></li>
+          <li><strong>订单</strong><span>发单意图先落盘；受理超时先冻结查询，断线重连不重复开仓。</span></li>
+          <li><strong>退出</strong><span>触发亏损阈值或持仓满 60 秒自动平今；状态不明则停止自动重试并人工核对。</span></li>
+        </ul>
+      </div>
+      <div class="slide-footer"><span>100,000 元为用户指定的仿真止损触发额，并非最大实际亏损保证</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">详细规则 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-6" data-title="作业一的验收边界" aria-label="第 6 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业一 · 证据边界</p>
+        <h2>已验收什么，尚未证明什么</h2>
+        <div class="two-col">
+          <div><h3 class="teal">已经发生</h3><p>行情接入、1 手仿真开仓、自动平今、完整订单与成交回报、最终空仓查询；25 项规则和模拟执行测试通过。</p></div>
+          <div><h3 class="warm">仍有限制</h3><p>止损分支只在模拟测试中覆盖，未在实际仿真成交中触发；短时闭环不能证明全天稳定、真实市场成交质量或策略盈利。</p></div>
+        </div>
+      </div>
+      <div class="slide-footer"><span>原始会话日志、个人账号与订单账本只保留本机</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">验收证据说明 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-7" data-title="因子研究的研究问题" aria-label="第 7 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业二 · 研究设计</p>
+        <h2>均线关系能否预测<br>股票自身的五日涨跌？</h2>
+        <p class="lead">在交易日 <strong>t 收盘后</strong>计算分数；最早按 <strong>t+1 开盘</strong>买入意向，至 <strong>t+6 开盘</strong>退出。</p>
+        <div class="metrics">
+          <div><span class="number">861</span><span class="label">只曾入选沪深300的股票</span></div>
+          <div><span class="number">329 万</span><span class="label">余条同源 BaoStock 前复权日线</span></div>
+          <div><span class="number">758</span><span class="label">个六日抽样信号日的准确历史成分</span></div>
+        </div>
+        <p class="fine">主评价：股票自身五日平均收益与上涨比例；辅助：同日股票池收益差和 Rank IC。0.3% 往返费用仅为敏感性假设。</p>
+      </div>
+      <div class="slide-footer"><span>信号日只使用当时已知的数据；未成交意向不因未来表现而删除</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">研究口径 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-8" data-title="多阶段因子探索" aria-label="第 8 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业二 · 研究历程</p>
+        <h2>不止一次四轮探索</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>阶段</th><th>候选规模</th><th>留下的经验</th></tr></thead>
+          <tbody>
+            <tr><td>首次股票研究</td><td>4 × 12</td><td>初筛者在 2021—23 年测试期自身收益为负</td></tr>
+            <tr><td>均线关系再研究</td><td>4 × 12</td><td>距离、斜率、交叉与持续性均未稳定通过</td></tr>
+            <tr><td>去掉事后筛选</td><td>4 × 12</td><td>纠正依赖未来信息的入样过滤</td></tr>
+            <tr><td>统一数据延伸</td><td>12</td><td>准确历史成分下，抽样起点会改变结论</td></tr>
+            <tr><td>多均线＋价格行为</td><td>10 + 12 + 12 + 15</td><td>历史均值较好的组合仍缺独立时间验证</td></tr>
+          </tbody>
+        </table></div>
+        <p class="fine">另有 AU0 黄金期货 12 候选的早期练习，未参与股票因子选择。以上各阶段都保留失败候选；重复查看历史会增加选择偏差。</p>
+      </div>
+      <div class="slide-footer"><span>表中数量为候选位置，含重复对照，不代表独立因子数</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">完整阶段记录 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-9" data-title="最新四轮的方向" aria-label="第 9 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业二 · 最近一组四轮</p>
+        <h2>从均线结构到量价条件</h2>
+        <ul class="line-list">
+          <li><strong>第一轮 · 10 项</strong><span>比较排列、最弱间距、同步扩大与价格突破；只有同步扩大通过宽松历史初筛。</span></li>
+          <li><strong>第二轮 · 12 项</strong><span>加入追高、日内收盘、放缩量、波幅和跳空方向；向上跳空组合的历史均值较高。</span></li>
+          <li><strong>第三轮 · 12 项</strong><span>用单纯跳空、均线排列和同步扩大作对照；前两者近段更弱，但条件均值差不能直接解释为因果作用。</span></li>
+          <li><strong>第四轮 · 15 项</strong><span>配对开收盘位置、突破、成交量；选出待未来复核的候选，但没有一项完成独立时间验证。</span></li>
+        </ul>
+      </div>
+      <div class="slide-footer"><span>每轮先存计划再运行；2008—2026 年已被此前研究看过</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/tree/main/reports/ma_price" target="_blank" rel="noopener noreferrer">49 项计划与结果 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-10" data-title="待复核候选与不确定性" aria-label="第 10 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">作业二 · 最终候选</p>
+        <h2>均线同步扩大＋向上跳空<br>＋收在当日区间下半部</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>已看过的历史时期</th><th class="num">自身平均五日收益</th><th class="num">上涨比例</th><th class="num">扣假设成本后 95% 区间下界</th></tr></thead>
+          <tbody>
+            <tr><td>2008—2016</td><td class="num">+1.041%</td><td class="num">52.5%</td><td class="num">−0.049%</td></tr>
+            <tr><td>2017—2022</td><td class="num">+1.123%</td><td class="num">54.1%</td><td class="num">−0.059%</td></tr>
+            <tr><td>2023—2026</td><td class="num">+1.363%</td><td class="num">52.0%</td><td class="num">−0.058%</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">三段历史均值为正，但三段区间都允许扣除假设成本后为负；49 项相关候选的选择偏差也未由这些区间消除。</p>
+      </div>
+      <div class="slide-footer"><span>收益为历史预测统计，不是实际可交易利润</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/ma_price/round_04_diagnostic.json" target="_blank" rel="noopener noreferrer">第四轮诊断数据 ↗</a></div>
+    </section>
+
+    <section class="slide" id="slide-11" data-title="结论与证据" aria-label="第 11 页，共 11 页">
+      <div class="slide-inner">
+        <p class="eyebrow">结论 · 证据入口</p>
+        <p class="verdict">仿真交易闭环<span class="teal">已完成</span>。<br>因子有效性<span class="warm">尚未证实</span>。</p>
+        <p class="body">第一项给出一次真实 SimNow 仿真成交与空仓核验。第二项保留多阶段候选、失败结果和最终候选的锁定规则；新的未来时间检验尚未发生。</p>
+        <div class="report-links">
+          <a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">第一部分正式报告 ↗</a>
+          <a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/reports/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener noreferrer">第二部分正式报告 ↗</a>
+          <a href="https://github.com/Chuboxiao/quantllm-lecture2homework/tree/main/projects" target="_blank" rel="noopener noreferrer">源码与测试 ↗</a>
+          <a href="https://github.com/Chuboxiao/quantllm-lecture2homework/blob/main/wiki/concepts/architecture.md" target="_blank" rel="noopener noreferrer">VeighNa / CTP 架构笔记 ↗</a>
+        </div>
+      </div>
+      <div class="slide-footer"><span>公开版不包含个人账号、密码、原始订单号或账户快照</span><a href="https://github.com/Chuboxiao/quantllm-lecture2homework" target="_blank" rel="noopener noreferrer">作业仓库 ↗</a></div>
+    </section>
+  </main>
+
+  <nav class="deck-controls" aria-label="幻灯片导航">
+    <span class="hint">← → / 空格翻页 · 浏览器打印可导出 PDF</span>
+    <div class="control-actions"><button type="button" id="previous" aria-label="上一页">上一页</button><span id="counter" aria-live="polite">1 / 11</span><button type="button" id="next" aria-label="下一页">下一页</button></div>
+  </nav>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const previous = document.getElementById('previous');
+      const next = document.getElementById('next');
+      const counter = document.getElementById('counter');
+      const progress = document.getElementById('progress');
+      let current = Math.min(slides.length - 1, Math.max(0, Number((location.hash.match(/^#slide-(\d+)$/) || [])[1] || 1) - 1));
+      let touchStartX = 0;
+      function show(index, updateHash = true) {
+        current = Math.min(slides.length - 1, Math.max(0, index));
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === current);
+          slide.setAttribute('aria-hidden', String(i !== current));
+        });
+        previous.disabled = current === 0;
+        next.disabled = current === slides.length - 1;
+        counter.textContent = `${current + 1} / ${slides.length}`;
+        progress.style.width = `${(current + 1) / slides.length * 100}%`;
+        document.title = `${slides[current].dataset.title}｜第二讲作业验收`;
+        if (updateHash) history.replaceState(null, '', `#slide-${current + 1}`);
+        window.scrollTo(0, 0);
+      }
+      previous.addEventListener('click', () => show(current - 1));
+      next.addEventListener('click', () => show(current + 1));
+      window.addEventListener('hashchange', () => {
+        const match = location.hash.match(/^#slide-(\d+)$/);
+        if (match) show(Number(match[1]) - 1, false);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('a,button,input,textarea,select')) return;
+        if (['ArrowRight','PageDown',' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
+        if (['ArrowLeft','PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
+        if (event.key === 'Home') { event.preventDefault(); show(0); }
+        if (event.key === 'End') { event.preventDefault(); show(slides.length - 1); }
+      });
+      document.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].screenX; }, { passive:true });
+      document.addEventListener('touchend', (event) => {
+        const distance = event.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(distance) > 70) show(current + (distance < 0 ? 1 : -1));
+      }, { passive:true });
+      show(current, false);
+    })();
+  </script>
+</body>
+</html>
